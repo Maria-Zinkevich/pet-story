@@ -1,0 +1,40 @@
+// devices' sizes
+@mixin mobile {
+    @media (min-width: #{$screen-mobile}) {
+        @content;
+    }
+} 
+ 
+@mixin tablet {
+    @media (min-width: #{$screen-tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop-small {
+    @media (min-width: #{$screen-desktop-small}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$screen-desktop}) {
+        @content;
+    }
+}
+
+// typography
+@mixin weigth-size-line-color($font-weight, $font-size, $line-height, $color) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+//reset styles of elements
+
+@mixin reset-button-style {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}

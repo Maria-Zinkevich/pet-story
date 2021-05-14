@@ -1,0 +1,55 @@
+@media (min-width: 400px) and (max-width: 640px) { 
+	.pets__cards {
+		justify-content: center;
+	}
+
+	.pets__card {
+	   margin-right: 10px;
+	}
+
+	img {
+		margin-top: -16%;
+	}
+}
+
+@media (min-width: 733px) and (max-width: 939px) { 
+	.pets__cards {
+		width: 90%;
+		justify-content: space-around;
+	}
+ 
+}
+
+@media (min-width: 1150px) and (max-width: 1599px) {
+	.pets__card {
+		max-width: 350px;
+	}
+
+	.feed__container-inner {
+		max-width: 1160px;
+		width: 100%;
+	}
+
+	.testimonials__slider {
+		max-width: 1160px;
+		width: 100%;
+	}
+
+	.testimonials__slide-border {
+		width: 268px;
+		margin-right: 2.5%;
+	}
+
+	.testimonials__slide {
+		min-width: 262px;
+		padding: 15px 15px 19px;
+	}
+
+	.testimonials__text {
+		min-width: 237px;
+	}
+
+	.testimonials__button {
+		margin-left: 0;
+	}
+}

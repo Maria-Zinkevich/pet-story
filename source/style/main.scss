@@ -1,0 +1,15 @@
+@import './config/normalize';
+@import './config/variables';
+@import './config/mixins';
+@import './config/baseLayout';
+
+
+@import './components/header';
+@import './components/animal-online';
+@import './components/backstage';
+@import './components/pets';
+@import './components/feed';
+@import './components/testimonials';
+@import './components/footer';
+
+@import './config/media';
