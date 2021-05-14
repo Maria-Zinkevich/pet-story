@@ -1,0 +1,177 @@
+.header {
+	z-index: 4;
+	position: relative;
+	
+	padding: 0 1.25em; /*20px*/
+
+	background-color: #000000;
+
+	@include desktop-small {
+		padding: 0 1.875em; /*30px*/
+	}
+
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		max-width: 1160px;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__logo {
+		position: relative;
+		
+		margin: 0.143125em 0 0.1675em; /*2.29px 2.68px*/
+
+		width: 47px;
+		height: 29px;
+
+		@include desktop-small {
+			margin: 0.875em 0; /*14px*/
+
+			width: 5.125em; /*82px*/
+			height: 3.25em; /*52px*/
+		}
+	}
+
+	&__logo--link::before {
+		content: '';
+
+		position: absolute;
+		top: 46%;
+		left: 10%;
+			
+		width: 0.5625em; /*9px*/
+		height: 0.875em; /*14px*/
+
+		background-image: url("../assets/icons/bamboo-logo-icon-small.svg");
+		background-repeat: no-repeat;
+
+		@include desktop-small {
+			left: 14%;
+		
+			width: 0.751875em; /*12.03px*/
+			height: 1.31125em; /*20.98px*/
+		 
+			background-image: url("../assets/icons/bamboo-logo-icon.svg");
+		}
+	}
+
+	&__title {
+		box-sizing: border-box;
+
+		padding: 0;
+		margin: 0;
+
+		@include weigth-size-line-color(normal, 0.75em, 120%, #ffffff); /*12px*/
+		text-align: center;
+
+		border: none;
+
+		@include desktop-small {
+			padding: 0.221875em 0.296875em; /*3.55px 4.75px*/
+
+			font-size: 1.125em; /*18px*/
+		
+			border: 1px solid #ffffff;
+			border-radius: 2px;
+		}
+	} 
+
+	&__nav {
+		display: none;
+		max-width: 32.875em; /*526px*/
+		width: 100%;
+		margin-left: 3.9375em; /*63px*/
+
+		@include desktop-small {
+			display: block;
+		}
+	}
+	
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	
+		list-style: none;
+	}
+	
+	&__item {
+		display: flex;
+		padding: 1.8125em 0; /*29px*/
+	
+		list-style-type: none;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	&__link {
+		@include weigth-size-line-color(500, 1em, 140%, $white-frosted-color); /*16px*/
+	
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	&__link:hover {
+		color: $orange-color;
+	}
+	  
+	&__link--active {
+		color: $orange-color;
+		cursor: default;
+	}
+
+	&__burger-menu {
+		display: block;
+
+		position: absolute;
+		top: 0.6875em; /*11px*/
+		right: 0;
+		
+		width: 1.125em; /*18px*/
+		height: 0.125em; /*2px*/
+		
+		background: #ffffff;
+		border-radius: 2px;
+
+		@include desktop-small {
+			display: none;
+		}
+	}
+	  
+	&__burger-menu::after {
+		content: "";
+
+		position: absolute;
+		top: 0.5em; /*8px*/
+
+		width: 1.125em; /*18px*/
+		height: 0.125em; /*2px*/
+
+		background: #ffffff;
+		border-radius: 2px;
+	}
+	  
+	&__burger-menu::before {
+	   content: "";
+
+	   position: absolute;
+	   top: 0.25em; /*4px*/
+
+	   width: 1.125em; /*18px*/
+	   height: 0.125em; /*2px*/
+	   
+	   background: #ffffff;
+	   border-radius: 2px;
+	}
+}
