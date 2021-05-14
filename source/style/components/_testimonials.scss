@@ -1,0 +1,272 @@
+.testimonials {
+    position: relative;
+    padding: 30px 0 60px;
+
+    &::after {
+        content: url("../assets/icons/leav-icon-xm.svg");
+    
+        position: absolute;
+        right: 0;
+
+        @include tablet {
+            content: url("../assets/icons/leav-icon-md.svg");
+
+            bottom: -12%;
+        }
+
+        @include desktop-small {
+            content: url("../assets/icons/leav-icon-lg.svg");
+
+            bottom: -8%;
+        }
+
+        @include desktop {
+            content: url("../assets/icons/leav-icon-xl.svg");
+
+            bottom: -12%;
+        }
+    }
+
+    @include tablet {
+        padding: 60px 0 80px;
+    }
+
+    @include desktop-small {
+        padding: 100px 0 140px;
+    }
+
+    @include desktop {
+        padding: 140px 0 180px;
+    }
+
+    &__container {
+        display: flex;
+		flex-direction: column;
+        align-items: center;
+		max-width: 1160px;
+		width: 100%;
+		height: 100%; 
+    }
+
+    &__title {
+        @include weigth-size-line-color(400, 24px, 120%, $black-grey);
+        text-align: center;
+
+        @include tablet {
+            font-size: 36px;
+        }
+    }
+
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        min-width: 299px;
+        width: 93.43%;
+        height: 357px;
+        margin: 20px 0 30px;
+
+        overflow: hidden;
+
+        @include desktop-small {
+            flex-direction: row;
+            height: 391px;
+            width: 93.9%;
+            margin: 30px 0 20px;
+        }
+
+        @include desktop {
+            max-width: 1160px;
+		    width: 100%;
+            margin: 47px 0 21px;
+        }
+    }
+
+    &__slide-border {
+        width: 100%;
+        height: 109px;
+        margin-bottom: 15px;
+    
+        background: $multi-color-gradient;
+        border-radius: 20px;
+
+        @include desktop-small {
+            // min-width: 293px;
+            width: 31.20%; /*293 / 939*/
+            margin-right: 3.19%; /*30 / 939*/
+            height: 391px;
+        }
+
+        @include desktop {
+            width: 268px;
+            margin-right: 2.5%;
+        }
+    }
+
+    &__slide {
+        min-width: 295px;
+        height: 103px;
+        margin: 2px;
+        padding: 10px 12px 12px;
+       
+        background: #F1F3F2;
+        border-radius: 20px;
+
+        @include desktop-small {
+            min-width: 289px;
+            height: 387px;
+
+            padding: 15px 22px 19px 16px;
+        }
+
+        @include desktop {
+            min-width: 262px;
+		    padding: 15px 15px 19px;
+        }
+       
+    }
+
+    &__user {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &__user-info {
+        margin-left: 0;
+    }
+    
+    &__user-title {
+        @include weigth-size-line-color(400, 16px, 120%, #000000);
+    }
+    
+    &__user-subtitle {
+        @include weigth-size-line-color(300, 15px, 120%, #BDBDBD);
+    }
+    
+    &__user-avatar {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    
+    &__user-avatar--michael {
+        content: url("../assets/icons/michael-john-icon.svg");
+    }
+    
+    &__user-avatar--oskar {
+        content: url("../assets/icons/oskar-samborsky-icon.svg");
+    }
+    
+    &__user-avatar--fredericka {
+        content: url("../assets/icons/fredericka-michelin-icon.svg");
+    }
+    
+    &__user-avatar--mila {
+        content: url("../assets/icons/mila-riksha-icon.svg");
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        min-width: 252px;
+        height: 38px;
+        margin: 0 29px 0 6px;
+    
+        @include weigth-size-line-color(300, 15px, 120%, #767474);
+
+        overflow: hidden;
+
+        @include desktop-small {
+            height: 305px;
+            width: 100%;
+            margin: 17px 22px 0 6px;
+        }
+
+        @include desktop {
+            min-width: 237px;
+        }
+    }
+    
+    &__user-location::after {
+        content: '•';
+        margin-left: 5px;
+    }
+
+    &__input {
+        display: none;
+        width: 100%;
+
+        @include desktop-small {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    input[type="range"] {
+        width: 599px;
+        height: 8px;
+        margin: 22px 0 32px;
+      
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: #F5F7F6;
+        border-radius: 5px;
+        border-color: transparent;
+        outline: none;
+    }
+    
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 8px;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+        width: 116px;
+        height: 8px;
+    
+        -webkit-appearance: none;
+        background: #FE9013;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__button {
+		display: flex;
+        justify-content: center;
+		align-items: center;
+		width: 240px;
+		height: 54px;
+
+		background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+		border-radius: 5px;
+		border: none;
+
+		cursor: pointer;
+		outline: none;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+
+		&:active {
+			background: $green;
+		}
+
+		@include tablet {
+			margin-top: 40px;
+		}
+
+        @include desktop-small {
+            width: 298px;
+            margin-left: 3%;
+        }
+
+        @include desktop {
+            margin-left: 0;
+        }
+	}
+
+	&__button > a {
+		@include weigth-size-line-color(500, 1em, 140%, $white);
+		text-align: center;
+		text-transform: uppercase;
+	}    
+}
