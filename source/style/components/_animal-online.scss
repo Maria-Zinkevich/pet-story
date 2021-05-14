@@ -1,0 +1,156 @@
+.animal-online {
+	height: 187px;
+
+	background: url("../assets/images/giant-panda-lg.jpg") 100% 70% no-repeat;
+	background-size: cover;
+
+	@include tablet {
+		height: 339px;
+	}
+
+	@include desktop-small {
+		height: 504px;
+	}
+
+	@include desktop {
+		height: 700px;
+	}
+
+	&__container {
+		max-width: 1160px;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__container--inner {
+		position: relative;
+		
+		display: flex;
+		width: 90%;
+		height: 100%;
+		
+		@include tablet {
+			margin-left: 1.25em; /*20px*/
+		}
+	}
+
+	&__title {
+		z-index: 3;
+		position: absolute;
+		top: 22px; 
+		right: 0;
+	
+		@include weigth-size-line-color(bold, 1.75em, 75%, $white); /*28px / 16px*/
+		text-align: center;
+		text-transform: uppercase;
+
+		width: 4.571em; /*128px / 28px*/
+		height: 3.642em; /*102px / 28px*/
+
+		@include tablet {
+			top: 48px;
+
+			width: 4.722em; /*255px / 54px*/
+			height: 3.796em; /*205px / 54px*/
+
+			font-size: 3.35em; /*54px / 16px*/
+		}
+
+		@include desktop-small {
+			width: 4.705em; /*400px / 85px*/
+			height: 3.764em; /*320px / 85px*/
+
+			font-size: 5.312em; /*85px / 16px*/
+		}
+
+		@include desktop {
+			top: 89px;
+			right: -70px;
+
+			width: 4.716em; /*500px / 106px*/
+			height: 3.773em; /*400px / 106px*/
+
+			font-size: 6.625em; /*106px / 16px*/
+		}
+	}
+
+	&__title::before {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		top: -19px;
+		left: -19px;
+
+		width: 4.25em; /*119px / 28px*/
+		height: 4.25em; /*119px / 28px*/
+
+		background: $orange-gradient;
+		border-radius: 50%;
+
+		@include tablet {
+			top: -40px;
+
+			width: 4.388em; /*237px / 54px*/
+			height: 4.388em; /*237px / 54px*/
+		}
+
+		@include desktop-small {
+			top: -53px;
+
+			width: 4.317em; /*367px / 85px*/
+			height: 4.317em; /*367px / 85px*/
+		}
+
+		@include desktop {
+			top: -77px;
+			left: -75px;
+
+			width: 4.386em; /* 465px / 106px*/
+			height: 4.386em; /* 465px / 106px*/
+		}
+	}
+
+	&__title > span {
+		color: $yellow;
+	}
+
+	&__button {
+        z-index: 2;
+		position: absolute;
+		top: 207px;
+		left: calc(50% - 298px/2);
+	
+		width: 18.625em; /*298px / 16px*/
+		height: 3.375em; /*54px / 16px*/
+		padding: 1em 0;
+	
+		@include weigth-size-line-color(500, 1em, 140%, $white); /*16px*/
+		text-align: center;
+		text-transform: uppercase;
+	
+		background: $orange-gradient;
+		border-radius: 25px;
+
+        &:hover {
+			transform: scale(1.02);
+		}
+
+		&:active {
+			background: $green;
+		}
+
+		@include tablet {
+			top: 245px;
+			left: 0; 
+		}
+
+		@include desktop-small {
+			top: 403px;
+			right: -60%;
+		}
+
+		@include desktop {
+			top: 546px;
+		}
+	}
+}
