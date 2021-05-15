@@ -2423,7 +2423,7 @@ template {
 
 @media (min-width: 1000px) {
   .footer__social-text {
-    display: block;
+    display: inline;
     margin-bottom: -14px;
   }
 }
@@ -2432,7 +2432,7 @@ template {
   content: '';
   position: absolute;
   left: -38px;
-  bottom: 0;
+  bottom: -3px;
   width: 26px;
   height: 26px;
   background-image: url("../assets/icons/ellipse-for-social-links.svg");
@@ -2442,28 +2442,28 @@ template {
   content: url("../assets/icons/facebook-icon.svg");
   position: absolute;
   left: -29px;
-  bottom: 2px;
+  bottom: -1px;
 }
 
 .footer__social-link--twitter::after {
   content: url("../assets/icons/twitter-icon.svg");
   position: absolute;
   left: -32px;
-  bottom: 2px;
+  bottom: -1px;
 }
 
 .footer__social-link--instagram::after {
   content: url("../assets/icons/instagram-icon.svg");
   position: absolute;
   left: -33px;
-  bottom: 2px;
+  bottom: -1px;
 }
 
 .footer__social-link--youtube::after {
   content: url("../assets/icons/youtube-icon.svg");
   position: absolute;
   left: -34px;
-  bottom: 3px;
+  bottom: 0;
 }
 
 .footer__nav {

@@ -260,7 +260,7 @@
         @include weigth-size-line-color(400, 16px, 140%, $white);
     
         @include desktop-small {
-            display: block;
+            display: inline;
             margin-bottom: -14px;
         }
     }
@@ -270,7 +270,7 @@
     
         position: absolute;
         left: -38px;
-        bottom: 0;
+        bottom: -3px;
        
         width: 26px;
         height: 26px;
@@ -283,7 +283,7 @@
     
         position: absolute;
         left: -29px;
-        bottom: 2px;
+        bottom: -1px;
     }
     
     &__social-link--twitter::after {
@@ -291,7 +291,7 @@
     
         position: absolute;
         left: -32px;
-        bottom: 2px;
+        bottom: -1px;
     }
     
     &__social-link--instagram::after {
@@ -299,7 +299,7 @@
     
         position: absolute;
         left: -33px;
-        bottom: 2px;
+        bottom: -1px;
     }
     
     &__social-link--youtube::after {
@@ -307,7 +307,7 @@
     
         position: absolute;
         left: -34px;
-        bottom: 3px;
+        bottom: 0;
     }
     
     &__nav {
