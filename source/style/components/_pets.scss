@@ -65,7 +65,7 @@
         @include tablet {
             z-index: 1;
             position: absolute;
-            top: 39%;
+            top: 36%;
 
             display: flex;
             justify-content: space-between;
@@ -74,11 +74,13 @@
         } 
 
         @include desktop-small {
+            top: 34%;
             min-width: 295px;
         }
 
         @include desktop {
             max-width: 1322px;
+            top: 36%;
         }
 	}
 

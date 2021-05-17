@@ -1028,7 +1028,7 @@ template {
   .pets__buttons {
     z-index: 1;
     position: absolute;
-    top: 39%;
+    top: 36%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1042,6 +1042,7 @@ template {
 
 @media (min-width: 1000px) {
   .pets__buttons {
+    top: 34%;
     min-width: 295px;
   }
 }
@@ -1049,6 +1050,7 @@ template {
 @media (min-width: 1600px) {
   .pets__buttons {
     max-width: 1322px;
+    top: 36%;
   }
 }
 
@@ -2441,7 +2443,9 @@ template {
 
 @media (min-width: 1000px) {
   .footer__social-item {
-    width: 111px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
 }
 
@@ -2452,6 +2456,12 @@ template {
 .footer__social-link {
   position: relative;
   margin-right: 30px;
+}
+
+@media (min-width: 1000px) {
+  .footer__social-link {
+    margin-right: 0;
+  }
 }
 
 .footer__social-text {
@@ -2469,6 +2479,14 @@ template {
   }
 }
 
+.footer__social-item:hover .footer__social-link::before {
+  background: #4b9200;
+}
+
+.footer__social-item:hover .footer__social-text {
+  color: #4b9200;
+}
+
 .footer__social-link::before {
   content: '';
   position: absolute;
@@ -2476,35 +2494,37 @@ template {
   bottom: -3px;
   width: 26px;
   height: 26px;
-  background-image: url("../assets/icons/ellipse-for-social-links.svg");
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  opacity: 0.5;
 }
 
 .footer__social-link--facebook::after {
   content: url("../assets/icons/facebook-icon.svg");
   position: absolute;
   left: -29px;
-  bottom: -1px;
+  bottom: -3%;
 }
 
 .footer__social-link--twitter::after {
   content: url("../assets/icons/twitter-icon.svg");
   position: absolute;
   left: -32px;
-  bottom: -1px;
+  bottom: -5%;
 }
 
 .footer__social-link--instagram::after {
   content: url("../assets/icons/instagram-icon.svg");
   position: absolute;
   left: -33px;
-  bottom: -1px;
+  bottom: -8%;
 }
 
 .footer__social-link--youtube::after {
   content: url("../assets/icons/youtube-icon.svg");
   position: absolute;
   left: -34px;
-  bottom: 0;
+  bottom: -1%;
 }
 
 .footer__nav {

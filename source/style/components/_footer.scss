@@ -241,7 +241,7 @@
         }
 
         @include desktop-small {
-            width: 111px;
+            width: min-content;
         }
     }
     
@@ -252,6 +252,10 @@
     &__social-link {
         position: relative;
         margin-right: 30px;
+
+        @include desktop-small {
+            margin-right: 0;
+        }
     }
     
     &__social-text {
@@ -264,7 +268,15 @@
             margin-bottom: -14px;
         }
     }
-    
+
+    &__social-item:hover &__social-link::before {
+        background: $green;
+    }
+
+    &__social-item:hover &__social-text {
+        color: $green;
+    }
+
     &__social-link::before {
         content: '';
     
@@ -275,7 +287,9 @@
         width: 26px;
         height: 26px;
     
-        background-image: url("../assets/icons/ellipse-for-social-links.svg");
+        border-radius: 50%;
+        background-color: $grey;
+        opacity: 0.5;
     }
     
     &__social-link--facebook::after {
@@ -283,7 +297,7 @@
     
         position: absolute;
         left: -29px;
-        bottom: -1px;
+        bottom: -3%;
     }
     
     &__social-link--twitter::after {
@@ -291,7 +305,7 @@
     
         position: absolute;
         left: -32px;
-        bottom: -1px;
+        bottom: -5%;
     }
     
     &__social-link--instagram::after {
@@ -299,7 +313,7 @@
     
         position: absolute;
         left: -33px;
-        bottom: -1px;
+        bottom: -8%;
     }
     
     &__social-link--youtube::after {
@@ -307,7 +321,7 @@
     
         position: absolute;
         left: -34px;
-        bottom: 0;
+        bottom: -1%;
     }
     
     &__nav {
