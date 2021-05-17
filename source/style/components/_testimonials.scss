@@ -228,6 +228,17 @@
         cursor: pointer;
     }
 
+    input[type="range"]::-moz-range-thumb {
+        width: 116px;
+        height: 8px;
+    
+        -webkit-appearance: none;
+        background: #FE9013;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
     &__button {
 		display: flex;
         justify-content: center;

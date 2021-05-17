@@ -2014,6 +2014,16 @@ template {
   cursor: pointer;
 }
 
+.testimonials input[type="range"]::-moz-range-thumb {
+  width: 116px;
+  height: 8px;
+  -webkit-appearance: none;
+  background: #FE9013;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
 .testimonials__button {
   display: -webkit-box;
   display: -ms-flexbox;
