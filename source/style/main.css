@@ -566,6 +566,7 @@ template {
   height: 187px;
   background: url("../assets/images/giant-panda.jpg") 100% 70% no-repeat;
   background-size: cover;
+  background-color: #fe9013;
 }
 
 @media (min-width: 640px) {
@@ -965,9 +966,15 @@ template {
   }
 }
 
+@media (min-width: 1000px) {
+  .pets::before {
+    content: url("../assets/icons/palm-icon-lg.svg");
+  }
+}
+
 @media (min-width: 1600px) {
   .pets::before {
-    content: url("../assets/icons/palm-icon.svg");
+    content: url("../assets/icons/palm-icon-xl.svg");
   }
 }
 
@@ -985,9 +992,15 @@ template {
   }
 }
 
+@media (min-width: 1000px) {
+  .pets::after {
+    content: url("../assets/icons/strelitzia-icon-lg.svg");
+  }
+}
+
 @media (min-width: 1600px) {
   .pets::after {
-    content: url("../assets/icons/strelitzia-icon.svg");
+    content: url("../assets/icons/strelitzia-icon-xl.svg");
   }
 }
 
@@ -1317,6 +1330,24 @@ template {
   margin: 20px 0 60px;
   background: #fe9013;
   border-radius: 25px;
+}
+
+@media (min-width: 640px) {
+  .pets .pets__link {
+    margin: 60px 0 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .pets .pets__link {
+    margin: 80px 0 140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .pets .pets__link {
+    margin: 80px 0 100px;
+  }
 }
 
 .pets .pets__link:hover {

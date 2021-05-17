@@ -3,6 +3,7 @@
 
 	background: url("../assets/images/giant-panda.jpg") 100% 70% no-repeat;
 	background-size: cover;
+    background-color: $orange-light;
 
 	@include tablet {
 		height: 339px;

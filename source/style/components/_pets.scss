@@ -20,8 +20,12 @@
             content: url("../assets/icons/palm-icon-md.svg");
         }
 
+        @include desktop-small {
+            content: url("../assets/icons/palm-icon-lg.svg");
+        }
+
         @include desktop {
-            content: url("../assets/icons/palm-icon.svg");
+            content: url("../assets/icons/palm-icon-xl.svg");
         }
 	}
 	
@@ -37,8 +41,12 @@
             content: url("../assets/icons/strelitzia-icon-md.svg");
         }
 
+        @include desktop-small {
+            content: url("../assets/icons/strelitzia-icon-lg.svg");
+        }
+
         @include desktop {
-            content: url("../assets/icons/strelitzia-icon.svg");
+            content: url("../assets/icons/strelitzia-icon-xl.svg");
         }
 	}
 
@@ -305,6 +313,18 @@
 
         background: #fe9013;
         border-radius: 25px;
+
+        @include tablet {
+            margin: 60px 0 100px;
+        }
+
+        @include desktop-small {
+            margin: 80px 0 140px;
+        }
+
+        @include desktop {
+            margin: 80px 0 100px;
+        }
 
         &:hover {
 			transform: scale(1.02);
