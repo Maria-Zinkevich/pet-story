@@ -2271,8 +2271,10 @@ template {
   height: 42px;
   padding: 10px;
   margin-right: 10px;
+  color: #BDBDBD;
   background-color: transparent;
   border: 1px solid #f9804B;
+  outline: none;
 }
 
 .footer__form-email::-webkit-input-placeholder {
@@ -2303,22 +2305,57 @@ template {
   color: #BDBDBD;
 }
 
+.footer__form-email:focus {
+  border: 1px solid #4b9200;
+}
+
+.footer__form-email:invalid:not(:placeholder-shown) {
+  border-color: #d31414;
+  color: #d31414;
+}
+
+.footer__form-email:valid:not(:placeholder-shown) {
+  border-color: #4b9200;
+  color: #4b9200;
+}
+
 .footer__form-btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 129px;
   height: 42px;
   margin: 10px auto 40px;
-  color: #D31414;
-  background: #F1F3F2;
-  border: 1px solid #D31414;
+  color: #000000;
+  background: #f1f3f2;
+  border: 1px solid #333b41;
   border-radius: 5px;
+  outline: none;
 }
 
 @media (min-width: 1000px) {
   .footer__form-btn {
     margin: 0;
   }
+}
+
+.footer__form-btn:hover {
+  border: 1px solid #4b9200;
+  color: #4b9200;
+}
+
+.footer__form-btn:active {
+  border: 1px solid #3b7201;
+  color: #3b7201;
+}
+
+.footer__form-email:invalid:not(:placeholder-shown) + .footer__form-btn {
+  border: 1px solid #d31414;
+  color: #d31414;
+}
+
+.footer__form-email:valid:not(:placeholder-shown) + .footer__form-btn {
+  border: 1px solid #4b9200;
+  color: #4b9200;
 }
 
 .footer__btn {

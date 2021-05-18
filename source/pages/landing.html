@@ -323,9 +323,10 @@
                         </div>
                         <div class="footer__form-container">
                             <h3 class="footer__form-title">Subscribe to our news</h3>
-                            <form class="footer__form">
+                            <form class="footer__form" autocomplete="off">
                                 <label for="form-email">
-                                    <input type="email" class="footer__form-email" id="form-email" placeholder="Enter your email">
+                                    <input type="email" class="footer__form-email" id="form-email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                                    placeholder="Enter your email" required>
                                 </label>
                                 <button type="submit" class="footer__form-btn">Submit</button>
                             </form>
