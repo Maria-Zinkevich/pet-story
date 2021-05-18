@@ -1,20 +1,20 @@
 .animal-online {
-	height: 187px;
+	height: 11.6875em; /*187px / 16px*/
 
-	background: url("../assets/images/giant-panda.jpg") 100% 70% no-repeat;
+	background: url("../assets/images/giant-panda.jpg") 100% 80% no-repeat;
 	background-size: cover;
-    background-color: $orange-light;
+	background-color: $orange-light;
 
 	@include tablet {
-		height: 339px;
+		height: 21.1875em; /*339px / 16px*/
 	}
 
 	@include desktop-small {
-		height: 504px;
+		height: 31.5em; /*504px / 16px*/
 	}
 
 	@include desktop {
-		height: 700px;
+		height: 43.75em; /*700px / 16px*/
 	}
 
 	&__container {
@@ -31,45 +31,47 @@
 		height: 100%;
 		
 		@include tablet {
-			margin-left: 1.25em; /*20px*/
+			margin-left: 1.25em; /*20px / 16px*/
 		}
 	}
 
 	&__title {
 		z-index: 3;
 		position: absolute;
-		top: 22px; 
+		top: 1.375em; /*22px / 16px*/
 		right: 0;
 	
 		@include weigth-size-line-color(bold, 1.75em, 75%, $white); /*28px / 16px*/
 		text-align: center;
 		text-transform: uppercase;
 
-		width: 4.571em; /*128px / 28px*/
-		height: 3.642em; /*102px / 28px*/
+		width: 4.571428em; /*128px / 28px*/
+		height: 3.642857em; /*102px / 28px*/
 
 		@include tablet {
-			top: 48px;
+			top: .888888em; /*48px / 54px*/
 
 			width: 4.722em; /*255px / 54px*/
 			height: 3.796em; /*205px / 54px*/
 
-			font-size: 3.35em; /*54px / 16px*/
+			font-size: 3.375em; /*54px / 16px*/
 		}
 
 		@include desktop-small {
-			width: 4.705em; /*400px / 85px*/
-			height: 3.764em; /*320px / 85px*/
+			top: .494117em; /*42px / 85px*/
 
-			font-size: 5.312em; /*85px / 16px*/
+			width: 4.705882em; /*400px / 85px*/
+			height: 3.764705em; /*320px / 85px*/
+
+			font-size: 5.3125em; /*85px / 16px*/
 		}
 
 		@include desktop {
-			top: 89px;
-			right: -70px;
+			top: .839622em; /*89px / 106px*/
+			right: -.933962em; /*99px / 106px*/
 
-			width: 4.716em; /*500px / 106px*/
-			height: 3.773em; /*400px / 106px*/
+			width: 4.716981em; /*500px / 106px*/
+			height: 3.773584em; /*400px / 106px*/
 
 			font-size: 6.625em; /*106px / 16px*/
 		}
@@ -79,8 +81,8 @@
 		content: "";
 		z-index: -1;
 		position: absolute;
-		top: -19px;
-		left: -19px;
+		top: -.678571em; /*19px / 28px*/
+		left: -.678571em; /*19px / 28px*/
 
 		width: 4.25em; /*119px / 28px*/
 		height: 4.25em; /*119px / 28px*/
@@ -89,25 +91,25 @@
 		border-radius: 50%;
 
 		@include tablet {
-			top: -40px;
+			top: -.888888em; /*48px / 54px*/
 
-			width: 4.388em; /*237px / 54px*/
-			height: 4.388em; /*237px / 54px*/
+			width: 4.388888em; /*237px / 54px*/
+			height: 4.388888em; /*237px / 54px*/
 		}
 
 		@include desktop-small {
-			top: -53px;
+			top: -.623529; /*53px / 85px*/
 
-			width: 4.317em; /*367px / 85px*/
-			height: 4.317em; /*367px / 85px*/
+			width: 4.317647em; /*367px / 85px*/
+			height: 4.317647em; /*367px / 85px*/
 		}
 
 		@include desktop {
-			top: -77px;
-			left: -75px;
+			top: -.726415em; /*77px / 106px*/
+			right: 70.7547%; /*75px / 106px*/
 
-			width: 4.386em; /* 465px / 106px*/
-			height: 4.386em; /* 465px / 106px*/
+			width: 4.386792em; /* 465px / 106px*/
+			height: 4.386792em; /* 465px / 106px*/
 		}
 	}
 
@@ -116,9 +118,9 @@
 	}
 
 	&__button {
-        z-index: 2;
+		z-index: 2;
 		position: absolute;
-		top: 207px;
+		top: 12.9375em; /*207px / 16px*/
 		left: calc(50% - 298px/2);
 	
 		width: 18.625em; /*298px / 16px*/
@@ -130,9 +132,9 @@
 		text-transform: uppercase;
 	
 		background: $orange-gradient;
-		border-radius: 25px;
+		border-radius: 1.5625em; /*25px / 16px*/
 
-        &:hover {
+		&:hover {
 			transform: scale(1.02);
 		}
 
@@ -141,17 +143,18 @@
 		}
 
 		@include tablet {
-			top: 245px;
+			top: 15.3125em; /*245px / 16px*/
 			left: 0; 
 		}
 
 		@include desktop-small {
-			top: 403px;
-			right: -60%;
+			top: 25.1875em;  /*403px / 16px*/
+			left: 67%;
 		}
 
 		@include desktop {
-			top: 546px;
+			top: 34.125em;  /*546px / 16px*/
+			left: 71%;
 		}
 	}
 }

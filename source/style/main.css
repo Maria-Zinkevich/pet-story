@@ -568,27 +568,31 @@ template {
 }
 
 .animal-online {
-  height: 187px;
-  background: url("../assets/images/giant-panda.jpg") 100% 70% no-repeat;
+  height: 11.6875em;
+  /*187px / 16px*/
+  background: url("../assets/images/giant-panda.jpg") 100% 80% no-repeat;
   background-size: cover;
   background-color: #fe9013;
 }
 
 @media (min-width: 640px) {
   .animal-online {
-    height: 339px;
+    height: 21.1875em;
+    /*339px / 16px*/
   }
 }
 
 @media (min-width: 1000px) {
   .animal-online {
-    height: 504px;
+    height: 31.5em;
+    /*504px / 16px*/
   }
 }
 
 @media (min-width: 1600px) {
   .animal-online {
-    height: 700px;
+    height: 43.75em;
+    /*700px / 16px*/
   }
 }
 
@@ -610,14 +614,15 @@ template {
 @media (min-width: 640px) {
   .animal-online__container--inner {
     margin-left: 1.25em;
-    /*20px*/
+    /*20px / 16px*/
   }
 }
 
 .animal-online__title {
   z-index: 3;
   position: absolute;
-  top: 22px;
+  top: 1.375em;
+  /*22px / 16px*/
   right: 0;
   font-weight: bold;
   font-size: 1.75em;
@@ -626,42 +631,47 @@ template {
   /*28px / 16px*/
   text-align: center;
   text-transform: uppercase;
-  width: 4.571em;
+  width: 4.571428em;
   /*128px / 28px*/
-  height: 3.642em;
+  height: 3.642857em;
   /*102px / 28px*/
 }
 
 @media (min-width: 640px) {
   .animal-online__title {
-    top: 48px;
+    top: .888888em;
+    /*48px / 54px*/
     width: 4.722em;
     /*255px / 54px*/
     height: 3.796em;
     /*205px / 54px*/
-    font-size: 3.35em;
+    font-size: 3.375em;
     /*54px / 16px*/
   }
 }
 
 @media (min-width: 1000px) {
   .animal-online__title {
-    width: 4.705em;
+    top: .494117em;
+    /*42px / 85px*/
+    width: 4.705882em;
     /*400px / 85px*/
-    height: 3.764em;
+    height: 3.764705em;
     /*320px / 85px*/
-    font-size: 5.312em;
+    font-size: 5.3125em;
     /*85px / 16px*/
   }
 }
 
 @media (min-width: 1600px) {
   .animal-online__title {
-    top: 89px;
-    right: -70px;
-    width: 4.716em;
+    top: .839622em;
+    /*89px / 106px*/
+    right: -.933962em;
+    /*99px / 106px*/
+    width: 4.716981em;
     /*500px / 106px*/
-    height: 3.773em;
+    height: 3.773584em;
     /*400px / 106px*/
     font-size: 6.625em;
     /*106px / 16px*/
@@ -672,8 +682,10 @@ template {
   content: "";
   z-index: -1;
   position: absolute;
-  top: -19px;
-  left: -19px;
+  top: -.678571em;
+  /*19px / 28px*/
+  left: -.678571em;
+  /*19px / 28px*/
   width: 4.25em;
   /*119px / 28px*/
   height: 4.25em;
@@ -684,31 +696,35 @@ template {
 
 @media (min-width: 640px) {
   .animal-online__title::before {
-    top: -40px;
-    width: 4.388em;
+    top: -.888888em;
+    /*48px / 54px*/
+    width: 4.388888em;
     /*237px / 54px*/
-    height: 4.388em;
+    height: 4.388888em;
     /*237px / 54px*/
   }
 }
 
 @media (min-width: 1000px) {
   .animal-online__title::before {
-    top: -53px;
-    width: 4.317em;
+    top: -.623529;
+    /*53px / 85px*/
+    width: 4.317647em;
     /*367px / 85px*/
-    height: 4.317em;
+    height: 4.317647em;
     /*367px / 85px*/
   }
 }
 
 @media (min-width: 1600px) {
   .animal-online__title::before {
-    top: -77px;
-    left: -75px;
-    width: 4.386em;
+    top: -.726415em;
+    /*77px / 106px*/
+    right: 70.7547%;
+    /*75px / 106px*/
+    width: 4.386792em;
     /* 465px / 106px*/
-    height: 4.386em;
+    height: 4.386792em;
     /* 465px / 106px*/
   }
 }
@@ -720,7 +736,8 @@ template {
 .animal-online__button {
   z-index: 2;
   position: absolute;
-  top: 207px;
+  top: 12.9375em;
+  /*207px / 16px*/
   left: calc(50% - 298px/2);
   width: 18.625em;
   /*298px / 16px*/
@@ -735,7 +752,8 @@ template {
   text-align: center;
   text-transform: uppercase;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  border-radius: 25px;
+  border-radius: 1.5625em;
+  /*25px / 16px*/
 }
 
 .animal-online__button:hover {
@@ -749,21 +767,25 @@ template {
 
 @media (min-width: 640px) {
   .animal-online__button {
-    top: 245px;
+    top: 15.3125em;
+    /*245px / 16px*/
     left: 0;
   }
 }
 
 @media (min-width: 1000px) {
   .animal-online__button {
-    top: 403px;
-    right: -60%;
+    top: 25.1875em;
+    /*403px / 16px*/
+    left: 67%;
   }
 }
 
 @media (min-width: 1600px) {
   .animal-online__button {
-    top: 546px;
+    top: 34.125em;
+    /*546px / 16px*/
+    left: 71%;
   }
 }
 
