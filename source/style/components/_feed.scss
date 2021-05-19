@@ -1,12 +1,12 @@
 .feed {
-	padding: 1.25em 0; /*20px*/
+	padding: 1.25em 0; /*20px / 16px*/
 
 	background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 
 	opacity: 0.9;
 
 	@include desktop {
-		padding: 69px 0 100px;
+		padding: 4.3125em 0 6.25em; /*69px / 16px; 100px / 16px*/
 	}
 	
 	&__container {
@@ -20,23 +20,23 @@
 	&__container-inner {
 		display: flex;
 		flex-direction: column;
-		width: 93.75%; /*300px / 320px*/
-		height: 1042px;
+		width: 93.75%; /*300px / 320px * 100*/
+		height: 65.125em; /*1042px / 16px*/
 
 		background: rgba(253, 253, 255, 0.52);
-		border-radius: 20px;
+		border-radius: 1.25em; /*20px /16px*/
 
 		@include tablet {
-			padding: 10px 20px;
+			padding: .625em 1.25em; /*10px / 16px*/
 			width: 100%;
-			height: 721px;
+			height: 45.0625em; /*721px / 16px*/
 		}
 
 		@include desktop-small {
 			padding: 30px 48px;
 			
             width: 94%; /*940 / 1000*/
-			height: 796px;
+			height: 49.75em; /*796px / 16px*/
 		}
 
 		@include desktop {
@@ -50,27 +50,27 @@
 		padding: 1.25em 0; /*20px*/
 
 		@include desktop-small {
-			padding-bottom: 40px;
+			padding-bottom: 2.5em; /*40px / 16px*/
 		}
 	}
 
 	&__title {
-		padding-bottom: 0.417em; /*10px / 24px*/
+		padding-bottom: 0.416666em; /*10px / 24px*/
 
-		@include weigth-size-line-color(400, 1.5em, 120%, $orange-light); /*24px*/
+		@include weigth-size-line-color(400, 1.5em, 120%, $orange-light); /*24px / 16px*/
 		text-align: center;
 
 		@include tablet {
-			font-size: 42px;
+			font-size: 2.625em; /*42px / 16px*/
 		}
 
 		@include desktop-small {
-			font-size: 48px;
+			font-size: 3em; /*48px / 16px*/
 		}
 	}
 	
 	&__title-desc {
-		padding-bottom: 10px;
+		padding-bottom: .625em; /*10px / 16px*/
 
 		@include weigth-size-line-color(400, 1.125em, 120%, $black-grey); /*18px*/
 		text-align: center;
@@ -81,31 +81,32 @@
 
 		@include desktop-small {
 			padding-bottom: 20px;
-			font-size: 24px;
+			font-size: 1.5em; /*24px / 16px*/
 		}
 	}
 	
 	&__text {
 		display: none;
-		padding-bottom: 10px;
+		padding-bottom: .625em; /*10px / 16px*/
 
-		@include weigth-size-line-color(500, 16px, 130%, $black-grey);
+		@include weigth-size-line-color(500, 1em, 130%, $black-grey);
 
 		@include tablet {
 			display: block;
 		}
 
 		@include desktop-small {
-			max-width: 813px;
+			width: 100%;
 			margin-left: 0;
 		}
 
 		@include desktop {
-			max-width: 1160px;
+			width: 1160px;
 		}
 
 		&:last-child {
 			font-weight: 400;
+
 			@include desktop {
 				max-width: 863px;
 			}
@@ -113,25 +114,25 @@
 	}
 
 	&__link {
-		border-bottom: 1px solid $orange-light;
-		padding-bottom: 2px;
+		border-bottom: .0625em solid $orange-light; /*1px / 16px*/
+		padding-bottom: .125em; /*2px / 16px*/
 		cursor: pointer;
 		color: $black-grey;
 	}
 	
 	&__subtitle {
-		padding-bottom: 0.833em; /*20px / 24px*/
+		padding-bottom: 0.833333em; /*20px / 24px*/
 		@include weigth-size-line-color(400, 1.5em, 120%, $black-grey); /*24px / 16px*/
 		text-align: center;
 
 		@include desktop-small {
-			padding-bottom: 40px;
-			font-size: 36px;
+			padding-bottom: 1.111111em; /*40px / 36px*/
+			font-size: 2.25em; /*36px / 16px*/
 		}
 	}
 
 	&__donation {
-		margin-bottom: 20px;
+		margin-bottom: 1.25em; /*20px / 16px*/
 	}
 
 	&__steps {
@@ -140,18 +141,18 @@
 		@include tablet {
 			display: flex;
 			justify-content: space-between;
-			width: 588px;
+			min-width: 588px;
 		}
 
 		@include desktop-small {
-			width: 764px;
+			min-width: 764px;
 		}
 	}
 
 	&__step {
-		width: 168px; /*168px / 300px*/
-		height: 231px;
-		margin-bottom: 20px;
+		width: 10.5em; /*168px / 16px*/
+		height: 14.4375em; /*231px / 16px*/
+		margin-bottom: 1.25em; /*20px / 16px*/
 
 		@include tablet {
 			margin: 0;
@@ -161,11 +162,11 @@
 	&__step-icon {
 		content: '';
 
-		width: 168px;
-		height: 168px;
+		width: 10.5em; /*168px / 16px*/
+		height: 10.5em;
 	
-		border: 1px solid $orange-color;
-		border-radius: 5px;
+		border: .0625em solid $orange-color; /*1px / 16px*/
+		border-radius: .3125em; /*5px / 16px*/
 		background-repeat: no-repeat;
 		background-position: center;
 	}
@@ -202,11 +203,11 @@
 		display: flex;
         justify-content: center;
 		align-items: center;
-		width: 298px;
-		height: 54px;
+		width: 18.625em; /*298px / 16px*/
+		height: 3.375em; /*54px / 16px*/
 
 		background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-		border-radius: 25px;
+		border-radius: 1.5625em; /*25px / 16px*/
 		border: none;
 
 		cursor: pointer;
@@ -221,11 +222,10 @@
 		}
 
 		@include tablet {
-			margin-top: 40px;
+			margin-top: 2.5em; /*40px / 16px*/
 		}
 	}
 	&__button > a {
-		
 		@include weigth-size-line-color(500, 1em, 140%, $white);
 		text-align: center;
 		text-transform: uppercase;
