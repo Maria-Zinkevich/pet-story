@@ -999,7 +999,7 @@ template {
   content: url("../assets/icons/palm-icon-xm.svg");
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -0.5%;
 }
 
 @media (min-width: 640px) {
@@ -1025,7 +1025,7 @@ template {
   z-index: -1;
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -0.5%;
 }
 
 @media (min-width: 640px) {
@@ -1098,8 +1098,9 @@ template {
 
 .pets__button {
   position: relative;
-  width: 62px;
-  height: 62px;
+  width: 3.875em;
+  /*62px / 16px*/
+  height: 3.875em;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 50%;
   cursor: pointer;
@@ -1114,8 +1115,8 @@ template {
   right: 37.1%;
   top: 43.55%;
   bottom: 43.55%;
-  width: 16px;
-  height: 8px;
+  width: 1em;
+  height: 0.5em;
 }
 
 .pets__button:hover {
@@ -1147,26 +1148,30 @@ template {
           justify-content: space-between;
   min-width: 285px;
   width: 89%;
-  height: 1388px;
+  height: 86.75em;
+  /*1388px / 16px*/
   overflow: hidden;
 }
 
 @media (min-width: 640px) {
   .pets__cards {
     width: 100%;
-    height: 756px;
+    height: 47.25em;
+    /*756px / 16px*/
   }
 }
 
 @media (min-width: 1000px) {
   .pets__cards {
-    height: 801px;
+    height: 50.0625em;
+    /*801px / 16px*/
   }
 }
 
 @media (min-width: 1600px) {
   .pets__cards {
-    height: 872px;
+    height: 54.5em;
+    /*872px / 16px*/
   }
 }
 
@@ -1175,13 +1180,17 @@ template {
   min-width: 285px;
   max-width: 420px;
   width: 100%;
-  height: 332px;
-  margin-bottom: 20px;
+  height: 20.75em;
+  /*332px / 16px*/
+  margin-bottom: 1.25em;
+  /*20px / 16px*/
   margin-left: 0;
-  border: 2px solid #fe9013;
+  border: .125em solid #fe9013;
+  /*2px / 16px*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: .3125em;
+  /*5px / 16px*/
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   overflow: hidden;
@@ -1195,21 +1204,24 @@ template {
     margin-right: 0;
   }
   .pets__card:first-child {
-    margin-bottom: 92px;
+    margin-bottom: 5.75em;
+    /*92px / 16px*/
   }
 }
 
 @media (min-width: 1000px) {
   .pets__card {
     max-width: 293px;
-    height: 354px;
+    height: 22.125em;
+    /*354px / 16px*/
   }
 }
 
 @media (min-width: 1600px) {
   .pets__card {
     max-width: 366px;
-    height: 420px;
+    height: 26.25em;
+    /*420px / 16px*/
   }
   .pets__card:first-child {
     margin-bottom: 0;
@@ -1219,20 +1231,24 @@ template {
 .pets__card-header {
   position: relative;
   width: 100%;
-  height: 285px;
-  border-radius: 1px 1px 0 0;
+  height: 17.8125em;
+  /*285px / 16px*/
+  border-radius: .0625em .0625em 0 0;
+  /*1px / 16px*/
   overflow: hidden;
 }
 
 @media (min-width: 1000px) {
   .pets__card-header {
-    height: 294px;
+    height: 18.375em;
+    /*294px / 16px*/
   }
 }
 
 @media (min-width: 1600px) {
   .pets__card-header {
-    height: 366px;
+    height: 22.875em;
+    /*366px / 16px*/
   }
 }
 
@@ -1242,7 +1258,8 @@ template {
   height: auto;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  border-radius: 5px 5px 0 0;
+  border-radius: .3125em .3125em 0 0;
+  /*5px / 16px*/
 }
 
 .pets__card:hover img {
@@ -1274,12 +1291,13 @@ template {
 }
 
 .pets__card-hover > h2 {
-  margin-bottom: 5px;
+  margin-bottom: .3125em;
+  /*5px / 16px*/
   font-weight: 400;
   font-size: 1.5em;
   line-height: 130%;
   color: #ffffff;
-  /*24px*/
+  /*24px / 16px*/
   text-transform: uppercase;
 }
 
@@ -1288,7 +1306,7 @@ template {
   font-size: 1.375em;
   line-height: 130%;
   color: #ffffff;
-  /*22px*/
+  /*22px / 16px*/
   text-align: center;
 }
 
@@ -1300,14 +1318,17 @@ template {
 
 .pets__card-body {
   position: relative;
-  height: 47px;
-  padding: 6px 0 10px 12px;
+  height: 2.9375em;
+  /*47px / 16px*/
+  padding: .375em 0 .625em .75em;
+  /*6px / 16px; 10px / 16px; 12px / 16px*/
   background-color: #ffffff;
 }
 
 @media (min-width: 1000px) {
   .pets__card-body {
-    height: 60px;
+    height: 3.75em;
+    /*60px / 16px*/
   }
 }
 
@@ -1315,7 +1336,19 @@ template {
   content: url("../assets/icons/herbivorous-icon.svg");
   position: absolute;
   top: 8%;
-  right: 8px;
+  right: 3%;
+}
+
+@media (min-width: 1000px) {
+  .pets__card-body--herbivorous::after {
+    top: 19%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .pets__card-body--herbivorous::after {
+    top: 8%;
+  }
 }
 
 .pets__card-body--carnivorous::after {
@@ -1323,21 +1356,34 @@ template {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 8px;
+  right: 3%;
+}
+
+@media (min-width: 1000px) {
+  .pets__card-body--carnivorous::after {
+    top: 15%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .pets__card-body--carnivorous::after {
+    top: 0;
+  }
 }
 
 .pets__card-title {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 140%;
   color: #000000;
+  /*12px / 16px*/
   text-transform: uppercase;
 }
 
 @media (min-width: 1000px) {
   .pets__card-title {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 140%;
     color: #000000;
   }
@@ -1345,17 +1391,19 @@ template {
 
 .pets__card-subtitle {
   font-weight: 300;
-  font-size: 11px;
+  font-size: 0.6875em;
   line-height: 120%;
   color: #000000;
+  /*11px / 16px*/
 }
 
 @media (min-width: 1000px) {
   .pets__card-subtitle {
     font-weight: 300;
-    font-size: 15px;
+    font-size: 0.9375em;
     line-height: 120%;
     color: #000000;
+    /*15px / 16px*/
   }
 }
 
@@ -1369,28 +1417,35 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 298px;
-  height: 54px;
-  margin: 20px 0 60px;
+  width: 18.625em;
+  /*298px / 16px*/
+  height: 3.375em;
+  /*54px / 16px*/
+  margin: 1.25em 0 3.75em;
+  /*20px / 16px; 60px / 16px*/
   background: #fe9013;
-  border-radius: 25px;
+  border-radius: 1.5625em;
+  /*25px / 16px*/
 }
 
 @media (min-width: 640px) {
   .pets .pets__link {
-    margin: 60px 0 100px;
+    margin: 3.75em 0  6.25em;
+    /*60px / 16px; 100px / 16px*/
   }
 }
 
 @media (min-width: 1000px) {
   .pets .pets__link {
-    margin: 80px 0 140px;
+    margin: 5em 0 8.75em;
+    /*80px / 16px; 140px / 16px*/
   }
 }
 
 @media (min-width: 1600px) {
   .pets .pets__link {
-    margin: 80px 0 100px;
+    margin: 5em 0 6.25em;
+    /*80px / 16px; 100px / 16px*/
   }
 }
 
@@ -1405,9 +1460,10 @@ template {
 
 .pets .pets__link-btn {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 140%;
   color: #ffffff;
+  /*16px*/
   text-align: center;
   text-transform: uppercase;
 }
@@ -2715,6 +2771,17 @@ template {
     width: 90%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1149px) {
+  .pets__card-image {
+    height: 100%;
+  }
+  .pets__card-body--herbivorous::after,
+  .pets__card-body--carnivorous::after {
+    top: 8%;
+    right: 3%;
   }
 }
 

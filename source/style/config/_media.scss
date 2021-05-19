@@ -20,6 +20,19 @@
  
 }
 
+@media (min-width: 1000px) and (max-width: 1149px) { 
+    .pets__card-image {
+        height: 100%;
+    }
+    
+    .pets__card-body--herbivorous::after,
+    .pets__card-body--carnivorous::after {
+        top: 8%;
+        right: 3%;
+    }
+ 
+}
+
 @media (min-width: 1150px) and (max-width: 1599px) {
 	.pets__card {
 		max-width: 350px;
