@@ -4,7 +4,7 @@
 	}
 
 	.pets__card {
-	   margin-right: 10px;
+	   margin-right: .625em; /*10px / 16px*/
 	}
 
 	img {
@@ -55,7 +55,7 @@
 
 	.testimonials__slide {
 		min-width: 262px;
-		padding: 15px 15px 19px;
+		padding: .9375em .9375em 1.1875em; /*15px / 16px; 19px / 16px*/
 	}
 
 	.testimonials__text {
