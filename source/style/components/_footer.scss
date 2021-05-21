@@ -10,15 +10,15 @@
 		max-width: 1160px;
 		width: 100%;
 		height: 100%;
-        padding: 20px 0 30px;
+        padding: 1.25em 0 1.875em; /*20px / 16px; 30px / 16px*/
 
         @include tablet {
             width: 93.75%;
-            padding: 12px 0;
+            padding: .75em 0; /*12px / 16px*/
         }
 
         @include desktop-small {
-            padding: 40px 0 50px;
+            padding: 2.5em 0 3.125em; /*40px / 16px; 50px / 16px*/
         }
     }
 
@@ -38,19 +38,19 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            margin-bottom: 32px;
+            margin-bottom: 2em; /*32px / 16px*/
         }
     }
 
     &__logo {
         position: relative;
-        width: 128px;
+        width: 8em; /*128px / 16px*/
     
         margin: 0 auto;
     
         @include tablet {
-            width: 82px;
-            height: 52px;
+            width: 5.125em; /*82px / 16px*/
+			height: 3.25em; /*52px / 16px*/
             margin: 0;
         }
     }
@@ -60,13 +60,12 @@
     
         margin: 0;
     
-        @include weigth-size-line-color(400, 19px, 120%, $white);
+        @include weigth-size-line-color(400, 1.1875em, 120%, $white); /*19px / 16px*/
         text-align: center;
     
         @include tablet {
-            padding-top: 4px;
-            padding-bottom: 2px;
-            border: 1.18841px solid $white;
+            padding: .25em 0 .125em; /*4px 2px*/
+            border: .125em solid $white; /*2px*/
         }
     } 
       
@@ -82,17 +81,19 @@
             top: 42.3%;
         }
         
-        width: 12.03px;
-        height: 20.98px;
+        width: .751875em; /*12.03px / 16px*/
+        height: 1.31125em; /*20.98px / 16px*/
      
         background-image: url("../assets/icons/bamboo-logo-icon.svg");
         background-repeat: no-repeat;
     }
+
+    /*===form===*/
     
     &__form-container {
         display: flex;
         flex-direction: column;
-        margin-top: 92px;
+        margin-top: 5.75em; /*92px / 16px*/
     
         @include tablet {
             display: none;
@@ -100,18 +101,18 @@
         
         @include desktop-small {
             display: flex;
-            width: 366px;
+            width: 22.875em; /*366px / 16px*/
             margin: 0;
         }
     }
     
     &__form-title {
-        margin-bottom: 14px;
+        margin-bottom: .875em; /*14px / 16px*/
     
-        @include weigth-size-line-color(400, 16px, 140%, $white);
+        @include weigth-size-line-color(400, 1em, 140%, $white); /*16px*/
     
         @include desktop-small {
-            font-size: 24px;
+            font-size: 1.5em; /*24px/ 16px*/
             margin-left: 0;
         }
     }
@@ -119,33 +120,33 @@
     &__form {
         display: flex;
         flex-direction: column;
-        width: 228px;
+        width: 14.25em; /*228px / 16px*/
         
         @include desktop-small {
             flex-direction: row;
-            width: 366px;
+            width: 22.875em; /*366px / 16px*/
         }
     }
     
     &__form-email {
-        width: 228px;
-        height: 42px;
-        padding: 10px;
-        margin-right: 10px;
+        width: 14.25em; /*228px / 16px*/
+        height: 2.625em; /*42px / 16px*/
+        padding: .625em; /*10px / 16px*/
+        margin-right: .625em; /*10px / 16px*/
     
         color: #BDBDBD;
 
         background-color: transparent;
-        border: 1px solid $orange-color;
+        border: .0625em solid $orange-color; /*1px / 16px*/
         outline: none;
     }
     
     &__form-email::placeholder {
-        @include weigth-size-line-color(400, 16, 140%, #BDBDBD);
+        @include weigth-size-line-color(400, 1em, 140%, #BDBDBD);
     }
 
     &__form-email:focus {
-        border: 1px solid $green;
+        border: .0625em solid $green;
     }
 
     &__form-email:invalid:not(:placeholder-shown) {
@@ -161,15 +162,15 @@
     &__form-btn {
         box-sizing: border-box;
     
-        width: 129px;
-        height: 42px;
-        margin: 10px auto 40px;
+        width: 8.0625em; /*129px / 16px*/;
+        height: 2.625em; /*42px / 16px*/;
+        margin: .625em auto 2.5em; /*10px 40px*/
        
         color: #000000;
 
         background: #f1f3f2;
-        border: 1px solid #333b41;
-        border-radius: 5px;
+        border: .0625em solid #333b41; /*1px*/
+        border-radius: .3125em; /*5px / 16px*/;
         outline: none;
     
         @include desktop-small {
@@ -178,22 +179,22 @@
     }
 
     &__form-btn:hover {
-        border: 1px solid #4b9200;
+        border: .0625em solid #4b9200; /*1px*/
         color: #4b9200;
     }
       
     &__form-btn:active {
-        border: 1px solid #3b7201;
+        border: .0625em solid #3b7201; /*1px*/
         color: #3b7201;
     }
 
     &__form-email:invalid:not(:placeholder-shown) + &__form-btn{
-        border: 1px solid $red;
+        border: .0625em solid $red;
         color: $red;
     }
     
     &__form-email:valid:not(:placeholder-shown) + &__form-btn {
-        border: 1px solid $green;
+        border: .0625em solid $green;
         color: $green;
     }
     
@@ -201,14 +202,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 298px;
-        height: 54px;
+        width: 18.625em; /*298px/ 16px*/
+        height: 3.375em; /*54px / 16px*/
         padding: 0;
-        margin: 0 auto 44px;
+        margin: 0 auto 2.75em; /*44px*/
         
         background-color: transparent;
         background: $orange-gradient;
-        border-radius: 5px;
+        border-radius: .3125em; /*5px / 16px*/;
         border: none;
     
         cursor: pointer;
@@ -223,6 +224,11 @@
     
         @include tablet {
             margin-left: 0;
+            margin-bottom: 6.0625em; /*97px / 16px*/
+        }
+
+        @include desktop-small {
+            margin-bottom: 3.0625em; /*49px / 16px*/
         }
     }
     
@@ -244,38 +250,43 @@
             width: 100%;
         }
     }
-      
+
+    /*===social-list===*/
+
     &__social-list {
         position: absolute;
-        top: 75px;
+        top: 14%;
         left: calc(50% - 26px/2 - 84px);
         display: flex;
         margin: 0;
         padding: 0;
     
         @include tablet {
-            top: 20px;
-            left: 94%;
+            top: 13%;
+            left: 97%;
             display: flex;
             flex-direction: column;
-            width: 26px;
+            
+            width: 0;
         }
     
         @include desktop-small {
             position: static;
-            margin-left: 0;
+            width: 1.625em; /*26px / 16px*/
+            margin-left: 1.625em; /*26px / 16px*/
         }
     }
     
     &__social-item {
-        height: 26px;
-        margin-left: 30px; 
+        height: 1.625em; /*26px / 16px*/
+        margin-left: 1.875em; /*30px / 16px*/
     
         list-style-type: none;
     
         @include tablet {
-            width: 0;
-            margin-bottom: 20px;
+            // width: 0;
+            margin-left: auto;
+            margin-bottom: 1.25em; /*20px / 16px*/
         }
 
         @include desktop-small {
@@ -289,7 +300,11 @@
     
     &__social-link {
         position: relative;
-        margin-right: 30px;
+        margin-right: 1.875em; /*30px / 16px*/
+
+        @include tablet {
+            position: absolute;
+        }
 
         @include desktop-small {
             margin-right: 0;
@@ -299,11 +314,11 @@
     &__social-text {
         display: none;
     
-        @include weigth-size-line-color(400, 16px, 140%, $white);
+        @include weigth-size-line-color(400, 1em, 140%, $white);
     
         @include desktop-small {
             display: inline;
-            margin-bottom: -14px;
+            margin-bottom: -.875em; /*14px / 16px*/
         }
     }
 
@@ -319,11 +334,11 @@
         content: '';
     
         position: absolute;
-        left: -38px;
-        bottom: -3px;
+        left: -2.375em; /*38px / 16px*/
+        bottom: -.1875em; /*3px / 16px*/
        
-        width: 26px;
-        height: 26px;
+        width: 1.625em; /*26px / 16px*/
+        height: 1.625em; /*26px / 16px*/
     
         border-radius: 50%;
         background-color: $grey;
@@ -334,7 +349,7 @@
         content: url("../assets/icons/facebook-icon.svg");
     
         position: absolute;
-        left: -29px;
+        left: -1.8125em; /*29px / 16px*/
         bottom: -3%;
     }
     
@@ -342,7 +357,7 @@
         content: url("../assets/icons/twitter-icon.svg");
     
         position: absolute;
-        left: -32px;
+        left: -2em; /*32px / 16px*/
         bottom: -5%;
     }
     
@@ -350,7 +365,7 @@
         content: url("../assets/icons/instagram-icon.svg");
     
         position: absolute;
-        left: -33px;
+        left: -2.0625em; /*33px / 16px*/
         bottom: -8%;
     }
     
@@ -358,21 +373,23 @@
         content: url("../assets/icons/youtube-icon.svg");
     
         position: absolute;
-        left: -34px;
+        left: -2.125em; /*34px / 16px*/
         bottom: -1%;
     }
     
+    /*===navigation===*/
+
     &__nav {
-        width: 278px;
+        width: 17.375em; /*278px / 16px*/
         margin: 0;
     
         @include tablet {
             order: 1;
-            width: 298px;
+            width: 18.625em; /*298px / 16px*/
         }
     
         @include desktop-small {
-            width: 332px;
+            width: 20.75em; /*332px / 16px*/
         }
     }
     
@@ -393,7 +410,7 @@
     }
     
     &__link {
-        @include weigth-size-line-color(400, 16px, 140%, $white);
+        @include weigth-size-line-color(400, 1em, 140%, $white);
     }
     
     &__link:hover {
@@ -408,22 +425,22 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 232px;
-        margin: 0 0 40px;
+        width: 14.5em; /*232px / 16px*/
+        margin: 0 0 2.5em; /*40px / 16px*/
     
         opacity: 0.8;
     
         @include tablet {
             order: 2;
-            margin-bottom: 5px;
+            margin-bottom: -.0625em; /*1px*/
         }
     }
       
     &__designed > span {
-        @include weigth-size-line-color(200, 15px, 130%, $white);
+        @include weigth-size-line-color(200, .9375em, 130%, $white); /*15px*/
         
         &:last-child {
-            margin-top: 10px;
+            margin-top: .625em; /*40px / 16px*/
         }
     }
 }
