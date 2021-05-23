@@ -65,3 +65,9 @@
 		margin-left: 0;
 	}
 }
+
+@media (max-height: 530px) {
+    .feedback {
+        top: 0;
+    }
+}

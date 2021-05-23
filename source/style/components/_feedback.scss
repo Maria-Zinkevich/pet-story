@@ -1,0 +1,173 @@
+.feedback__wrap {
+    visibility: hidden;
+    
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+  
+.feedback {
+    position: absolute;
+    top: auto;
+
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 310px;
+    max-width: 444px;
+    width: 96.875%;
+    height: 35.75em; /*572px / 16px*/
+    margin: 0 auto;
+
+    background: $white;
+    border-radius: .9375em; /*15px*/
+    opacity: 1;
+
+    @include desktop-small {
+        flex-direction: row;
+        min-width: 886px;
+        height: 33.125em; /*530px / 16px*/
+    }
+
+    &__form-container {
+        height: 26.875em; /*430px / 16px*/
+        padding: 1.25em 8.090615%; /*20px 25px / 309px * 100*/
+        margin: 0;
+
+        @include desktop-small {
+            width: 50%;
+            padding: 0;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        @include weigth-size-line-color(400, 1em, 140%, rgba(87, 87, 89, 0.5));
+        @include desktop-small {
+            width: 23.9375em; /*383px / 16px*/
+            padding: 1.875em 0; /*30px / 16px*/
+        }
+    }
+    
+    &__form-input {
+        outline: none;
+        width: 100%;
+        border: none;
+        border-bottom: .0625em solid $grey-light; /*1px*/
+        padding-bottom: .625em; /*10px / 16px*/
+        margin-bottom: 1.25em; /*20px / 16px*/
+        @include weigth-size-line-color(400, 1em, 0,rgba(87, 87, 89, 0.5));
+    }
+    
+    &__form-textarea {
+        height: 13.875em; /*222px / 16px*/
+        margin-bottom: 1.25em; /*20px / 16px*/
+        padding-top: .4375em .4375em .375em .1875em; /*7px 7px 6px 3px*/
+        
+        border: 1px solid $grey-light;
+        @include weigth-size-line-color(400, 1em, 140%,rgba(87, 87, 89, 0.5));
+        outline: none;
+        resize: none;
+
+        @include desktop-small {
+            height: 17.8125em; /*285px / 16px*/
+            margin: .4375em 0 1.875em; /*7px 30px*/
+        }
+    }
+      
+    &__form-input::placeholder,
+    &__form-textarea::placeholder {
+        @include weigth-size-line-color(400, 1em, 140%,rgba(87, 87, 89, 0.5));
+    }
+      
+    &__button {
+        width: 8.0625em; /*129px / 16px*/
+        height: 2.625em; /*42px / 16px*/
+        margin: 0 auto;
+        
+        @include weigth-size-line-color(400, 1em, 140%, $black);
+        background: #f1f3f2;
+        border: .0625em solid #333b41; /*1px*/
+        border-radius: .3125em; /*5px*/
+    
+        outline: none;
+        cursor: pointer;
+
+        @include desktop-small {
+            margin-right: 0;
+        }
+    
+        &:active {
+            border: .0625em solid $green;
+            color: $green;
+        }
+    }
+
+    &__comment-container {
+        width: 100%;
+        height: 8.875em; /*142px / 16px*/
+    
+        background: #f5f7f6;
+        border-radius: .9375em .9375em 0 0; /*15px*/
+    
+        @include tablet {
+            height: 10.1875em; /*163px / 16px*/
+        }
+    
+        @include desktop-small {
+            max-width: 443px;
+            height: 100%;
+            border-radius: 0 .9375em .9375em 0; /*15px*/
+        }
+    }
+      
+    &__close-btn {
+        width: .875em; /*14px*/
+        height: .875em; /*14px*/
+        margin: .75em .9375em 0 auto; /* 12px 15px*/
+    
+        cursor: pointer;
+        background-image: url(../assets/icons/close-icon.svg);
+    
+        @include desktop-small {
+            margin: 1.875em 1.875em 0 auto; /*39px / 16px*/
+        }
+    }
+     
+    &__comment-icon {
+        height: 5.9375em; /*95px / 16px*/
+        display: flex;
+        align-items: flex-end;
+    
+        background-image: url(../assets/icons/comment-icon.svg);
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+    
+        @include desktop-small {
+            background-image: url(../assets/icons/comment-icon-lg.svg);
+            height: 10.3125em; /*165px / 16px*/
+            margin-top: 8.5em; /*136px*/
+        }
+    }
+    
+    &__comment-info {
+        padding-top: 1em;
+
+        @include weigth-size-line-color(400, 1.5em, 29px, transparent); /*24px*/
+        text-align: center;
+
+        background: $multi-color-gradient-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
