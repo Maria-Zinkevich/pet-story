@@ -2902,7 +2902,6 @@ template {
 }
 
 .feedback__wrap {
-  visibility: hidden;
   z-index: 5;
   position: fixed;
   left: 0;
@@ -2920,6 +2919,10 @@ template {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: auto;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .feedback {
