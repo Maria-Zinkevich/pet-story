@@ -2206,6 +2206,12 @@ template {
   /*240px /16px*/
   height: 3.375em;
   /*54px / 16px*/
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 140%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: .3125em;
   /*5px / 16px*/
@@ -2242,15 +2248,6 @@ template {
   .testimonials__button {
     margin-left: 0;
   }
-}
-
-.testimonials__button > a {
-  font-weight: 500;
-  font-size: 1em;
-  line-height: 140%;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .footer {

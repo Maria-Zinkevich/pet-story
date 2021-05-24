@@ -245,6 +245,10 @@
 		width: 15em; /*240px /16px*/
 		height: 3.375em; /*54px / 16px*/
 
+        @include weigth-size-line-color(500, 1em, 140%, $white);
+		text-align: center;
+		text-transform: uppercase;
+
 		background: $orange-gradient;
 		border-radius: .3125em; /*5px / 16px*/
 		border: none;
@@ -272,11 +276,5 @@
         @include desktop {
             margin-left: 0;
         }
-	}
-
-	&__button > a {
-		@include weigth-size-line-color(500, 1em, 140%, $white);
-		text-align: center;
-		text-transform: uppercase;
-	}    
+	} 
 }
