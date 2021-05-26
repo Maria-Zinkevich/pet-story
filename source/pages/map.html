@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>PetStory Online Zoo</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header" id="top">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#top" class="header__logo--link">
+                        <h1 class="header__title">PetStory online</h1>
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="./landing.html" class="header__link">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#top" class="header__link header__link--active">Map</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Zoos</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Contact us</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="header__link">Designed by &#169;</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__burger-menu"></div>
+            </div>
+        </header>
+        <main class="main"> 
+            <section class="map">
+                <div class="map__container">
+                    <div class="map__elem map__elem--eagle">
+                        <a href="#">
+                            <img class="map__image map__image--eagle1" src="../assets/images/eagle1-map-xm.png" alt="Eagle">
+                            <img class="map__image map__image--eagle2" src="../assets/images/eagle2-map-xm.png" alt="Eagle">
+                        </a>
+                        <div class="map__tooltip map__tooltip--eagle">
+                            <p class="map__tooltip-name">Eagles</p>
+                            <p class="map__tooltip-location">Los Angeles, USA</p>
+                            <a href="#" class="map__tooltip-link">Watch online</a>
+                        </div>
+                    </div>
+                    <div class="map__elem map__elem--alligator">
+                        <a href="#">
+                            <img class="map__image map__image--alligator" src="../assets/images/alligator-map-xm.png" alt="Alligator">
+                        </a>
+                        <div class="map__tooltip map__tooltip--alligator">
+                            <p class="map__tooltip-name">Alligator</p>
+                            <p class="map__tooltip-location">Florida, USA</p>
+                            <a href="#" class="map__tooltip-link">Watch online</a>
+                        </div>
+                    </div>
+                    <div class="map__elem map__elem--gorilla">
+                        <a href="#">
+                            <img class="map__image map__image--gorilla" src="../assets/images/gorillas-map-xm.png" alt="Gorilla">
+                        </a>
+                        <div class="map__tooltip map__tooltip--gorilla">
+                            <p class="map__tooltip-name">Gorilla</p>
+                            <p class="map__tooltip-location">Congo, Africa</p>
+                            <a href="#" class="map__tooltip-link">Watch online</a>
+                        </div>
+                    </div>
+                    <div class="map__elem map__elem--panda">
+                        <a href="#">
+                            <img class="map__image map__image--panda" src="../assets/images/pandas-map-xm.png" alt="Panda">
+                            <img class="map__image map__image--panda" src="../assets/images/panda-map-xm.png" alt="Panda">
+                        </a>
+                        <div class="map__tooltip map__tooltip--gorilla">
+                            <p class="map__tooltip-name">Panda</p>
+                            <p class="map__tooltip-location">China, Asia</p>
+                            <a href="#" class="map__tooltip-link">Watch online</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map__buttons">
+                    <button class="map__button map__button--zoom-out" id="zoom-out"></button>
+                    <button class="map__button map__button--zoom-in" id="zoom-in"></button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wrap">
+                    <div class="footer__wrap--top">
+                        <div class="footer__logo">
+                            <a href="#top" class="footer__logo-link">
+                                <h2>PetStory online</h2>
+                            </a>
+                        </div>
+                        <div class="footer__form-container">
+                            <h3 class="footer__form-title">Subscribe to our news</h3>
+                            <form class="footer__form" autocomplete="off">
+                                <label for="form-email">
+                                    <input type="email" class="footer__form-email" id="form-email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                                    placeholder="Enter your email" required>
+                                </label>
+                                <button type="submit" class="footer__form-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__btn">
+                        <a href="#">Donate for volunteers</a>
+                    </div>
+                    <div class="footer__wrap--bottom">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link footer__social-link--facebook">
+                                    <span class="footer__social-text">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link footer__social-link--twitter">
+                                    <span class="footer__social-text">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link footer__social-link--instagram">
+                                    <span class="footer__social-text">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="#" class="footer__social-link footer__social-link--youtube">
+                                    <span class="footer__social-text">YouTube</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__designed">
+                            <span>Designed by Alisa Samborskaya</span>
+                            <span>&#169;RSSchool & &#169;Yem Digital 2021</span>
+                        </div>
+                        <nav class="footer__nav">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="./landing.html" class="footer__link">About</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#top" class="footer__link footer__link-active">Map</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Zoos</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Contact us</a>
+                                </li>
+                            </ul>
+                        </nav> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="feedback__wrap hidden">
+            <div class="feedback">
+                <div class="feedback__form-container">
+                    <form class="feedback__form">
+                        <input class="feedback__form-input" name="feedback-name" id="feedback-name" type="text"
+                    placeholder="Full Name">
+                        <input class="feedback__form-input" name="feedback-email" id="feedback-email" type="text"
+                    placeholder="Enter your email*">
+                        <textarea class="feedback__form-textarea" name="feedback-text" id="feedback-text"
+                    placeholder="What would you like to say?"></textarea>
+                        <button class="feedback__button" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="feedback__comment-container">
+                    <div class="feedback__close-btn"></div>
+                    <div class="feedback__comment-icon">
+                        <p class="feedback__comment-info">Leave Us a Comment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/landing.js"></script>
+</body>
+</html>
