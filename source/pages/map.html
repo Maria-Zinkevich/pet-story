@@ -43,53 +43,57 @@
             <section class="map">
                 <div class="map__container">
                     <div class="map__elem map__elem--eagle">
-                        <a href="#">
-                            <img class="map__image map__image--eagle1" src="../assets/images/eagle1-map-xm.png" alt="Eagle">
-                            <img class="map__image map__image--eagle2" src="../assets/images/eagle2-map-xm.png" alt="Eagle">
-                        </a>
+                        <img class="map__image map__image--eagle1" src="../assets/images/eagle1-map.svg" alt="Eagle">
+                        <img class="map__image map__image--eagle2" src="../assets/images/eagle2-map.svg" alt="Eagle">
                         <div class="map__tooltip map__tooltip--eagle">
                             <p class="map__tooltip-name">Eagles</p>
                             <p class="map__tooltip-location">Los Angeles, USA</p>
                             <a href="#" class="map__tooltip-link">Watch online</a>
+                            <div class="map__tooltip-pointer map__tooltip-pointer--eagle"></div>
                         </div>
                     </div>
                     <div class="map__elem map__elem--alligator">
-                        <a href="#">
-                            <img class="map__image map__image--alligator" src="../assets/images/alligator-map-xm.png" alt="Alligator">
-                        </a>
+                        <img class="map__image map__image--alligator" src="../assets/images/alligator-map.svg" alt="Alligator">
                         <div class="map__tooltip map__tooltip--alligator">
                             <p class="map__tooltip-name">Alligator</p>
                             <p class="map__tooltip-location">Florida, USA</p>
                             <a href="#" class="map__tooltip-link">Watch online</a>
+                            <div class="map__tooltip-pointer map__tooltip-pointer--alligator"></div>
                         </div>
                     </div>
                     <div class="map__elem map__elem--gorilla">
-                        <a href="#">
-                            <img class="map__image map__image--gorilla" src="../assets/images/gorillas-map-xm.png" alt="Gorilla">
-                        </a>
+                        <img class="map__image map__image--gorilla" src="../assets/images/gorillas-map.svg" alt="Gorilla">
                         <div class="map__tooltip map__tooltip--gorilla">
                             <p class="map__tooltip-name">Gorilla</p>
                             <p class="map__tooltip-location">Congo, Africa</p>
                             <a href="#" class="map__tooltip-link">Watch online</a>
+                            <div class="map__tooltip-pointer map__tooltip-pointer--gorilla"></div>
                         </div>
                     </div>
                     <div class="map__elem map__elem--panda">
-                        <a href="#">
-                            <img class="map__image map__image--panda" src="../assets/images/pandas-map-xm.png" alt="Panda">
-                            <img class="map__image map__image--panda" src="../assets/images/panda-map-xm.png" alt="Panda">
-                        </a>
-                        <div class="map__tooltip map__tooltip--gorilla">
+                        <img class="map__image map__image--panda" src="../assets/images/panda-map.svg" alt="Panda">
+                        <div class="map__tooltip map__tooltip--panda">
                             <p class="map__tooltip-name">Panda</p>
-                            <p class="map__tooltip-location">China, Asia</p>
+                            <p class="map__tooltip-location">Gansu, China</p>
                             <a href="#" class="map__tooltip-link">Watch online</a>
                         </div>
+                        <div class="map__tooltip-pointer map__tooltip-pointer--panda"></div>
+                    </div>
+                    <div class="map__elem map__elem--pandas">
+                        <img class="map__image map__image--pandas" src="../assets/images/pandas-map.svg" alt="Pandas">
+                        <div class="map__tooltip map__tooltip--pandas">
+                            <p class="map__tooltip-name">Pandas</p>
+                            <p class="map__tooltip-location">Sichuan, China</p>
+                            <a href="#" class="map__tooltip-link">Watch online</a>
+                        </div>
+                        <div class="map__tooltip-pointer map__tooltip-pointer--pandas"></div>
                     </div>
                 </div>
-                <div class="map__buttons">
-                    <button class="map__button map__button--zoom-out" id="zoom-out"></button>
-                    <button class="map__button map__button--zoom-in" id="zoom-in"></button>
-                </div>
             </section>
+            <div class="map__buttons">
+                <button class="map__button map__button--zoom-in" id="zoom-in"></button>
+                <button class="map__button map__button--zoom-out" id="zoom-out"></button>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -183,7 +187,5 @@
             </div>
         </div>
     </div>
-
-    <script src="../js/landing.js"></script>
 </body>
 </html>

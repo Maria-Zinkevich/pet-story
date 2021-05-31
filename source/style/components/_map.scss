@@ -1,0 +1,348 @@
+.main {
+    position: relative;
+
+    background-color: #EAF7FE;
+}
+
+.map {
+    height: 324px;
+
+    @include tablet {
+        height: 474px;
+        width: 93.75%;
+    }
+
+    @include desktop-small {
+        height: 747px;
+    }
+
+    @include desktop {
+        height: 939px;
+    }
+
+    &__container {
+        position: relative;
+        
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/images/map-xl.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    
+        max-width: 1160px;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__elem {
+        max-width: 159px;
+    }
+
+    &__image {
+        position: absolute;
+        margin: 0;
+    }
+
+    &__image--eagle1 {
+        width: 16.51px;
+        height: 16.51px;
+        top: 50%;
+        left: 7%;
+
+        @include tablet {
+            width: 24.14px;
+            height: 24.14px;
+            top: 52%;
+            left: 9%;
+        }
+
+        @include desktop-small {
+            width: 38.09px;
+            height: 38.09px;
+            top: 51%;
+        }
+
+        @include desktop {
+            width: 44px;
+            height: 44px;
+            top: 52%;
+            left: 8%;
+        }
+    }
+
+    &__image--eagle2 {
+        width: 18.76px;
+        height: 8.26px;
+        top: 54%;
+        left: 10%;
+
+        @include tablet {
+            width: 27.43px;
+            height: 12.07px;
+            top: 56%;
+            left: 11%;
+        }
+
+        @include desktop-small {
+            width: 43.29px;
+            height: 19.05px;
+            top: 56%;
+        }
+
+        @include desktop {
+            width: 50px;
+            height: 22px;
+        }
+    }
+
+    &__image--alligator {
+        width: 28.14px;
+        height: 7.5px;
+        top: 57%;
+        left: 21%;
+
+        @include tablet {
+            width: 41.15px;
+            height: 10.97px;
+            top: 58%;
+            left: 21%;
+        }
+
+        @include desktop-small {
+            width: 64.93px;
+            height: 17.31px;
+            top: 58%;
+        }
+
+        @include desktop {
+            width: 75px;
+            height: 20px;
+        }
+    }
+
+    &__image--gorilla {
+        width: 18.76px;
+        height: 15.01px;
+        top: 64%;
+        left: 51%;
+
+        @include tablet {
+            width: 27.43px;
+            height: 21.94px;
+            top: 69%;
+            left: 51%;
+        }
+
+        @include desktop-small {
+            width: 43.29px;
+            height: 34.63px;
+        }
+
+        @include desktop {
+            width: 50px;
+            height: 40px;
+        }
+    }
+
+    &__image--panda {
+        width: 13.88px;
+        height: 18.39px;
+        top: 46%;
+        left: 74%;
+
+        @include tablet {
+            width: 20.3px;
+            height: 26.88px;
+            left: 75%;
+        }
+
+        @include desktop-small {
+            width: 32.03px;
+            height: 42.42px;
+        }
+
+        @include desktop {
+            width: 37px;
+            height: 49px;
+        }
+    }
+
+    &__image--pandas {
+        width: 17.26px;
+        height: 15.76px;  
+        top: 54%;
+        left: 73%;
+
+        @include tablet {
+            width: 25.24px;
+            height: 23.04px;
+            top: 55%;
+            left: 74%;
+        }
+
+        @include desktop-small {
+            width: 39.82px;
+            height: 36.36px;
+            top: 55%;
+        }
+
+        @include desktop {
+            width: 46px;
+            height: 42px;
+        }
+    }
+      
+    &__tooltip {
+        position: relative;
+        display: none;
+        width: 158px;
+        height: 88px;
+        z-index: 1;
+        padding: 7px 10px 15px;
+        border-radius: 5px;
+        background: #29343d;
+        opacity: 1;
+        color: #cedfe9;
+        font-size: 0.875rem;
+        background: #ffffff;
+        border: 1px solid #000000;
+    }
+
+    &__tooltip-pointer {
+        z-index: 1;
+        position: absolute;
+        display: none;
+       
+        width: 10px;
+        height: 10px;
+
+        background-color: white;
+        border-right: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    &__tooltip-pointer--panda {
+        top: 53%;
+        left: 74%;
+
+        @include tablet {
+            top: 53.1%;
+            left: 75%;
+        }
+
+        @include desktop-small {
+            top: 52.1%;
+        }
+
+        @include desktop {
+            top: calc(51.1% + 5px);
+        }
+    }
+
+    &__tooltip--panda {
+        position: absolute;
+        top: calc(53% + 5px);
+        left: 60%;
+
+        @include desktop-small {
+            top: calc(52% + 5px);
+            left: 69%;
+        }
+
+        @include desktop {
+            top: calc(51.6% + 5px);
+        }
+    }
+      
+    &__tooltip--pandas {
+        top: -87px;
+        left: 100px;
+    }
+      
+    &__tooltip--gorilla {
+        top: 220%;
+        left: -120%;
+    }
+    
+    &__tooltip--eagles {
+        top: 170%;
+        left: -230%;
+    }
+    
+    &__tooltip--alligator {
+        top: 160%;
+        left: -80%;
+    }
+
+    &__tooltip-name,
+    &__tooltip-location {
+        @include weigth-size-line-color(400, 1em, 140%, $black);
+    }
+
+    &__tooltip-location {
+        margin-bottom: 10px;
+    }
+    
+    &__tooltip-link {
+        width: 100%;
+        background: #f1f3f2;
+        border: none;
+        border-radius: 5px;
+        @include weigth-size-line-color(400, 1em, 140%, #4B9200);
+        padding: 4px 16px;
+        
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    &__tooltip-link:hover {
+        color: #f9804b;
+    }
+
+    &__buttons {
+        display: none;
+        z-index: 99;
+        position: absolute;
+        bottom: 0;
+        right: 2.5%;
+        max-width: 54px;
+
+        @include desktop-small {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__button {
+        width: 54px;
+        height: 54px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__button--zoom-in {
+        margin-bottom: 10px;
+        background-image: url(../assets/icons/zoom-in.svg);
+    }
+
+    &__button--zoom-out {
+        margin-bottom: 20px;
+        background-image: url(../assets/icons/zoom-out.svg);
+
+        @include desktop {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+#tip {
+    fill:red;
+}
