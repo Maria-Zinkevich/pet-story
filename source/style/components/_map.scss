@@ -39,9 +39,21 @@
         max-width: 159px;
     }
 
+    &__elem:hover .map__tooltip {
+        display: block;
+    }
+
+    &__elem:hover .map__tooltip-pointer {
+        display: block;
+    }
+
     &__image {
         position: absolute;
         margin: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__image--eagle1 {
@@ -226,6 +238,94 @@
         transform: rotate(-135deg);
     }
 
+    &__tooltip-pointer--eagles {
+        position: absolute;
+        top: calc(55% + 5px);
+        left: 8%;
+
+        @include tablet {
+            top: calc(57% + 5px);
+            left: 10%;
+        }
+
+        @include desktop-small {
+            top: calc(58% + 5px);
+        }
+    }
+
+    &__tooltip--eagles {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+
+        @include tablet {
+            top: calc(58% + 5px);
+            left: 5%;
+        }
+
+        @include desktop-small {
+            top: calc(58.5% + 5px);
+            left: 5%;
+        }
+    }
+
+    &__tooltip-pointer--alligator {
+        top: 61%;
+        left: 23%;
+
+        @include tablet {
+            top: 61%;
+        }
+    }
+
+    &__tooltip--alligator {
+        position: absolute;
+        top: calc(61% + 5px);
+        left: 5%;
+
+        @include tablet {
+            top: calc(61% + 5px);
+            left: 11%;
+        }
+
+        @include desktop-small {
+            left: 15%;
+        }
+    }
+
+    &__tooltip-pointer--gorilla {
+        top: 70%;
+        left: 52%;
+
+        @include tablet {
+            top: 75%;
+        }
+
+        @include desktop-small {
+            top: 75%;
+        }
+
+        @include desktop {
+            top: calc(51.1% + 5px);
+        }
+    }
+
+    &__tooltip--gorilla {
+        position: absolute;
+        top: calc(70% + 5px);
+        left: 29%;
+
+        @include tablet {
+            top: calc(75% + 5px);
+            left: 39%;
+        }
+
+        @include desktop-small {
+            top: calc(75% + 5px);
+            left: 45%;
+        }
+    }
+
     &__tooltip-pointer--panda {
         top: 53%;
         left: 74%;
@@ -258,25 +358,25 @@
             top: calc(51.6% + 5px);
         }
     }
-      
+
+    &__tooltip-pointer--pandas {
+        top: 60.1%;
+        left: 74%;
+
+        @include desktop-small {
+            top: 60.1%;
+        }
+    }
+
     &__tooltip--pandas {
-        top: -87px;
-        left: 100px;
-    }
-      
-    &__tooltip--gorilla {
-        top: 220%;
-        left: -120%;
-    }
-    
-    &__tooltip--eagles {
-        top: 170%;
-        left: -230%;
-    }
-    
-    &__tooltip--alligator {
-        top: 160%;
-        left: -80%;
+        position: absolute;
+        top: calc(60% + 5px);
+        left: 60%;
+
+        @include desktop-small {
+            top: calc(60% + 5px);
+            left: 69%;
+        }
     }
 
     &__tooltip-name,
@@ -341,8 +441,4 @@
             margin-bottom: 40px;
         }
     }
-}
-
-#tip {
-    fill:red;
 }
