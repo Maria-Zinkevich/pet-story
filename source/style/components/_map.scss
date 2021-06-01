@@ -1,23 +1,23 @@
 .main {
     position: relative;
 
-    background-color: #EAF7FE;
+    background-color: #eaf7fe;
 }
 
 .map {
-    height: 324px;
+    height: 20.25em; /*324px*/
 
     @include tablet {
-        height: 474px;
+        height: 29.625em; /*474px*/
         width: 93.75%;
     }
 
     @include desktop-small {
-        height: 747px;
+        height: 46.6875em; /*747px*/
     }
 
     @include desktop {
-        height: 939px;
+        height: 58.6875em; /*939px*/
     }
 
     &__container {
@@ -57,169 +57,169 @@
     }
 
     &__image--eagle1 {
-        width: 16.51px;
-        height: 16.51px;
+        width: 1.0625em; /*17px*/
+        height: 1.0625em;
         top: 50%;
         left: 7%;
 
         @include tablet {
-            width: 24.14px;
-            height: 24.14px;
+            width: 1.5em; /*24px*/
+            height: 1.5em;
             top: 52%;
             left: 9%;
         }
 
         @include desktop-small {
-            width: 38.09px;
-            height: 38.09px;
+            width: 2.375em; /*38px*/
+            height: 2.375em;
             top: 51%;
         }
 
         @include desktop {
-            width: 44px;
-            height: 44px;
+            width: 2.75em; /*44px*/
+            height: 2.75em;
             top: 52%;
             left: 8%;
         }
     }
 
     &__image--eagle2 {
-        width: 18.76px;
-        height: 8.26px;
+        width: 1.1875em; /*19px*/
+        height: .5em; /*8px*/
         top: 54%;
         left: 10%;
 
         @include tablet {
-            width: 27.43px;
-            height: 12.07px;
+            width: 1.6875em; /*27px*/
+            height: .75em; /*12px*/
             top: 56%;
             left: 11%;
         }
 
         @include desktop-small {
-            width: 43.29px;
-            height: 19.05px;
+            width: 2.6875em; /*43px*/
+            height: 1.1875em; /*19px*/
             top: 56%;
         }
 
         @include desktop {
-            width: 50px;
-            height: 22px;
+            width: 3.125em;/*50px*/
+            height: 1.375em; /*22px*/
         }
     }
 
     &__image--alligator {
-        width: 28.14px;
-        height: 7.5px;
+        width: 1.75em; /*28px*/
+        height: .5em; /*8px*/
         top: 57%;
         left: 21%;
 
         @include tablet {
-            width: 41.15px;
-            height: 10.97px;
+            width: 2.5625em; /*41px*/
+            height: .6875em; /*11px*/
             top: 58%;
             left: 21%;
         }
 
         @include desktop-small {
-            width: 64.93px;
-            height: 17.31px;
+            width: 4.0625em; /*65px*/
+            height: 1.0625em; /*17px*/
             top: 58%;
         }
 
         @include desktop {
-            width: 75px;
-            height: 20px;
+            width: 4.6875em; /*75px*/
+            height: 1.25em; /*20px*/
         }
     }
 
     &__image--gorilla {
-        width: 18.76px;
-        height: 15.01px;
+        width: 1.1875em; /*19px*/
+        height: .9375em; /*15px*/
         top: 64%;
         left: 51%;
 
         @include tablet {
-            width: 27.43px;
-            height: 21.94px;
+            width: 1.6875em; /*27px*/
+            height: 1.375em; /*22px*/
             top: 69%;
             left: 51%;
         }
 
         @include desktop-small {
-            width: 43.29px;
-            height: 34.63px;
+            width: 2.6875em; /*43px*/
+            height: 2.1875em; /*35px*/
         }
 
         @include desktop {
-            width: 50px;
-            height: 40px;
+            width: 3.125em; /*50px*/
+            height: 2.5em; /*40px*/
             top: 67%;
         }
     }
 
     &__image--panda {
-        width: 13.88px;
-        height: 18.39px;
+        width: .875em; /*14px*/
+        height: 1.125em; /*18px*/
         top: 46%;
         left: 74%;
 
         @include tablet {
-            width: 20.3px;
-            height: 26.88px;
+            width: 1.25em; /*20px*/
+            height: 1.6875em; /*27px*/
             left: 75%;
         }
 
         @include desktop-small {
-            width: 32.03px;
-            height: 42.42px;
+            width: 2em; /*32px*/
+            height: 2.625em; /*42px*/
         }
 
         @include desktop {
-            width: 37px;
-            height: 49px;
+            width: 2.3125em; /*37px*/
+            height: 3.0625em; /*49px*/
         }
     }
 
     &__image--pandas {
-        width: 17.26px;
-        height: 15.76px;  
+        width: 1.0625em; /*17px*/
+        height: 1em;  /*16px*/
         top: 54%;
         left: 73%;
 
         @include tablet {
-            width: 25.24px;
-            height: 23.04px;
+            width: 1.5625em; /*25em*/
+            height: 1.4375em; /*23px*/
             top: 55%;
             left: 74%;
         }
 
         @include desktop-small {
-            width: 39.82px;
-            height: 36.36px;
+            width: 2.5em; /*40px*/
+            height: 2.25em; /*36px*/
             top: 55%;
         }
 
         @include desktop {
-            width: 46px;
-            height: 42px;
+            width: 2.875em; /*46px*/
+            height: 2.625em; /*42px*/
         }
     }
       
     &__tooltip {
+        z-index: 1;
         position: relative;
         display: none;
-        width: 158px;
-        height: 88px;
-        z-index: 1;
-        padding: 7px 10px 15px;
-        border-radius: 5px;
+        width: 9.875em; /*158px*/
+        padding: .4375em .625em .9375em; /*7px 10px 15px*/
+
+        border-radius: .3125em; /*5px*/
         background: #29343d;
         opacity: 1;
         color: #cedfe9;
         font-size: 0.875rem;
-        background: #ffffff;
-        border: 1px solid #000000;
+        background: $white;
+        border: .0625em solid $black; /*1px*/
     }
 
     &__tooltip-pointer {
@@ -227,12 +227,12 @@
         position: absolute;
         display: none;
        
-        width: 10px;
-        height: 10px;
+        width: .625em; /*10px*/
+        height: .625em;
 
-        background-color: white;
-        border-right: 1px solid #000000;
-        border-bottom: 1px solid #000000;
+        background-color: $white;
+        border-right: .0625em solid $black; /*1px*/
+        border-bottom: .0625em solid $black; /*1px*/
 
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
@@ -307,7 +307,7 @@
         }
 
         @include desktop {
-            top: calc(51.1% + 5px);
+            top: calc(71.1% + 5px);
         }
     }
 
@@ -324,6 +324,10 @@
         @include desktop-small {
             top: calc(75% + 5px);
             left: 45%;
+        }
+
+        @include desktop {
+            top: calc(71.5% + 5px);
         }
     }
 
@@ -394,8 +398,8 @@
         background: #f1f3f2;
         border: none;
         border-radius: 5px;
-        @include weigth-size-line-color(400, 1em, 140%, #4B9200);
-        padding: 4px 16px;
+        @include weigth-size-line-color(400, 1em, 140%, $green);
+        padding: .25em 1em; /*4px 16px*/
         
         outline: none;
         cursor: pointer;
@@ -403,15 +407,15 @@
     }
     
     &__tooltip-link:hover {
-        color: #f9804b;
+        color: $orange-color;
     }
 
     &__buttons {
-        display: none;
-        z-index: 99;
+        z-index: 1;
         position: absolute;
         bottom: 0;
         right: 2.5%;
+        display: none;
         max-width: 54px;
 
         @include desktop-small {
@@ -421,25 +425,25 @@
     }
 
     &__button {
-        width: 54px;
-        height: 54px;
-        background: #FFFFFF;
-        border-radius: 5px;
+        width: 3.375em; /*54px*/
+        height: 3.375em;
+        background: $white;
+        border-radius: .3125em; /*5px*/
         background-repeat: no-repeat;
         background-position: center;
     }
 
     &__button--zoom-in {
-        margin-bottom: 10px;
+        margin-bottom: .625em; /*10px*/
         background-image: url(../assets/icons/zoom-in.svg);
     }
 
     &__button--zoom-out {
-        margin-bottom: 20px;
+        margin-bottom: 1.25em; /*20px*/
         background-image: url(../assets/icons/zoom-out.svg);
 
         @include desktop {
-            margin-bottom: 40px;
+            margin-bottom: 2.5em; /*40px*/
         }
     }
 }
