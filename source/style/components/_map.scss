@@ -39,7 +39,7 @@
         max-width: 159px;
     }
 
-    &__elem:hover .map__tooltip {
+    &__elem:hover .map__tooltip {  
         display: block;
     }
 
@@ -154,6 +154,7 @@
         @include desktop {
             width: 50px;
             height: 40px;
+            top: 67%;
         }
     }
 

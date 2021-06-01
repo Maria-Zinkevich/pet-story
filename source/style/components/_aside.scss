@@ -1,0 +1,140 @@
+.aside {
+    position: sticky;
+    top: 54px;
+    width: 62px;
+    margin-left: 1.25em;
+
+    background: $multi-color-gradient-text;
+    border-radius: 5px;
+    
+    overflow-y: hidden;
+
+    @include tablet {
+        width: 72px;
+    }
+
+    @include desktop {
+        width: 99px;
+    }
+
+    &__wrap-inner {
+        height: 176px;
+
+        @include tablet {
+            height: 377px;
+        }
+
+        @include desktop {
+            height: 545px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0;
+        margin: auto;
+    }
+
+    &__item,
+    &__button {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        margin-bottom: 5px;
+
+        border: 2px solid orange;
+        border-radius: 50%;
+        background-color: $white;
+        
+        @include tablet {
+            margin-bottom: 10px;
+        }
+
+        @include desktop {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+    &__item-active,
+    &__item:active,
+    &__item:hover {
+        border-color: #4B9200;
+    }
+
+    &__item:first-child {
+        margin-top: 5px;
+        @include tablet {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__item-link {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__button--arrow {
+        border: 1px solid black;
+        @include desktop {
+            border: 2px solid orange;
+        }
+    }
+
+    &__button:hover,
+    &__button--arrow:hover {
+        border: 2px solid #4B9200;
+    }
+
+    &__item--gorilla > a {
+        background: url(../assets/icons/gorilla-icon-zoos.svg) no-repeat center;
+       
+    }
+
+    &__item--alligator > a {
+        background: url(../assets/icons/alligator-icon-zoos.svg) no-repeat center;
+    }
+
+    &__item--panda > a {
+        background: url(../assets/icons/panda-icon-zoos.svg) no-repeat center;
+    }
+
+    &__item--eagle > a {
+        background: url(../assets/icons/eagle-icon-zoos.svg) no-repeat center;
+    }
+
+    &__item--sloth > a {
+        background: url(../assets/icons/sloth-icon-zoos.svg) no-repeat center;
+    }
+
+    &__item--penguin > a {
+        background: url(../assets/icons/penguin-icon-zoos.svg) no-repeat center;
+    }
+
+    &__item--cheetahs > a {
+        background: url(../assets/icons/cheetah-icon-zoos.svg) no-repeat center;
+    }
+    
+    &__button--arrow > a {
+        background: url(../assets/icons/arrow-icon-zoos-t.svg) no-repeat center;
+
+        @include desktop {
+            background: url(../assets/icons/arrow-icon-zoos.svg) no-repeat center;
+        }
+    }
+}
+
+ 
+  
+  
+  
+
+
+
