@@ -9,3 +9,25 @@
 .wrapper {
     width: 100%;
 }
+
+.main__animal-page {
+    padding: 0 1.25em; /*20px / 16px*/
+
+	@include desktop-small {
+		padding: 0 1.875em; /*30px / 16px*/
+	}
+
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1160px;
+    width: 100%;
+    height: 100%;
+}
+
+.main__wrap-inner {
+    width: 100%; 
+}

@@ -1,0 +1,242 @@
+.camera {
+	position: relative;
+	top: -14.625em; /*234px*/
+
+	@include tablet {
+		top: -27.5625em; /*441px*/
+	}
+
+	@include desktop {
+		top: 0;
+	}
+
+	&__container {
+		@include tablet {
+			width: 82.5%;
+			margin-right: 0;
+		}
+
+		@include desktop {
+			width: 100%;
+		}
+	}
+
+	&__heading {
+		@include weigth-size-line-color(400, 1.5em, 120%, #333B41); /*24px / 16px*/
+		margin: .8333333em 0 .416666em; /*20px 10px / 24px*/
+		padding: 0;
+	
+		@include tablet {
+			font-size: 2.25em; /*36px / 16px*/
+			margin: .555555em 0 .277777em;
+		}
+	
+		@include desktop-small {
+			font-size: 3em; /*48px / 16px*/
+			margin: .416666em 0 .291666em;
+		}
+	}
+	  
+	&__video-wrap {
+		min-height: 10.5em; /*168px*/
+		height: 100%;
+		margin-bottom: 1.25em; /*20px*/
+	
+		@include tablet {
+			min-width: 30.9375em; /*495px*/
+			height: 17.375em; /*278px*/
+		  
+		}
+	
+		@include desktop-small {
+			min-width: 48.625em; /*778px*/
+			height: 27.375em; /*438px*/
+			margin-bottom: 3.75em; /*60px*/
+		}
+	
+		@include desktop {
+			height: 40.75em; /*652px*/
+			margin-bottom: 5em; /*80px*/
+		}
+	}
+	
+	&__video {
+		position: relative;
+	
+		width: 100%;
+		height: 100%;
+	
+		object-fit: cover;
+		border: none;
+	}
+	
+	&__wrap-inner {
+		width: 68%;
+		margin-left: 5.125em; /*82px*/
+		overflow-x: hidden;
+	
+		@media (min-width: 381px) {
+			width: 74%;
+		}
+	
+		@media (min-width: 407px) {
+			width: 68%;
+		}
+	
+		@media (min-width: 439px) {
+			width: 63%;
+		}
+	
+		@media (min-width: 451px) {
+			width: 76%;
+		}
+	
+		@media (min-width: 480px) {
+			width: 70%;
+		}
+	
+		@media (min-width: 519px) {
+			width: 65%;
+		}
+	
+		@media (min-width: 551px) {
+			width: 71%;
+		}
+	
+		@media (min-width: 582px) {
+			width: 66%;
+		}
+	
+		@media (min-width: 632px) {
+			width: 61%;
+		}
+	
+		@include tablet {
+			width: 78.787878%; /*390px / 495px*/
+			margin-left: 0;
+		}
+	
+		@include desktop {
+			width: 100%;
+		}
+	}
+	
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 21.875em; /*350px*/
+		padding-left: 0;
+		list-style: none;
+	
+		@include tablet {
+			width: 300%;
+			flex-wrap: nowrap;
+		}
+	}
+	
+	&__item {
+		margin: 0 3.333333% 3.333333% 0; /*10px / 300px*/
+		width: 5.5625em; /*89px*/
+		height: 4.25em; /*68px*/
+	
+		@include tablet {
+			min-width: 11.25em; /*180px*/
+			max-width: 23.3125em; /*373px*/
+			width: 100%;
+			height: 8.75em; /*140px*/
+			margin-right: 1.875em; /*30px*/
+		}
+	
+		@include desktop-small {
+			height: 13.125em; /*210px*/
+		}
+	
+		@include desktop {
+			width: 16.75em; /*268px*/
+		}
+	}
+	  
+	&__item-iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+		object-fit: cover;
+	}
+	
+	&__buttons {
+		display: none;
+	
+		@include tablet {
+			z-index: 1;
+			position: absolute;
+			top: 69%;
+			left: 84%;
+	
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: space-between;
+			height: 5.625em; /*90px*/
+		} 
+	
+		@include desktop-small {
+			top: 37.5em;
+			height: 8.375em; /*134px*/
+		}
+	
+		@include desktop {
+			top: 55em;
+			left: -5em;
+			flex-direction: row;
+			width: 82.75em; /*1324px*/
+		}
+	}
+	
+	&__button {
+		position: relative;
+	
+		width: 2.625em; /*42px*/
+		height: 2.625em;
+	   
+		background: $orange-gradient;
+		border-radius: 50%;
+	
+		@include reset-button-style;
+	
+		@include desktop-small {
+			width: 3.875em; /*62px*/
+			height: 3.875em;
+		}
+	
+		&::before {
+			content: "";
+	
+			position: absolute;
+			left: 31.1%;
+			top: 38.55%;
+	
+			width: 1em;
+			height: .5em; /*8px / 16px*/
+	
+			@include desktop-small {
+				left: 37.1%;
+				top: 43.55%;
+			}
+		}
+	
+		&:hover {
+			transform: scale(1.02);
+		}
+	
+		&:active {
+			background: $green;
+		}
+	}
+	
+	&__button--left::before {
+		background: url("../assets/icons/arrow-left.svg");
+	}
+	
+	&__button--right::before {
+		background: url("../assets/icons/arrow-right.svg");
+	}
+}

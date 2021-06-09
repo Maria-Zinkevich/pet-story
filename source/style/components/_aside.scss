@@ -1,8 +1,10 @@
 .aside {
-    position: sticky;
-    top: 3.375em; /*54px*/
+    z-index: 1;
+   
+    position: relative; /*!!!!*/
+    top: 14.5em;
     width: 3.875em; /*62px*/
-    margin-left: 1.25em;
+    margin-left: 0;
 
     background: $multi-color-gradient-text;
     border-radius: .3125em; /*5px*/
@@ -10,11 +12,21 @@
     overflow-y: hidden;
 
     @include tablet {
+        
+        top: 4.4em;
         width: 4.5em; /*72px*/
     }
 
+    @include desktop-small {
+        position: sticky;
+        top: 10.5em;
+    }
+
     @include desktop {
+        position: fixed;
+        left: 1.875%; /*30px / 1600px*/
         width: 6.1875em; /*99px*/
+        padding: 9px 0 8px;
     }
 
     &__wrap-inner {
