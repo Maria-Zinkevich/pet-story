@@ -43,7 +43,9 @@
 		height: 80px;
 	}
 
-	
+    .main__wrap-inner {
+        height: 35em;
+    }
 }
 
 @media (min-width: 451px) and (max-width: 550px) {
@@ -88,6 +90,10 @@
 		width: 142px;
 		height: 85px;
 	}
+
+    .main__wrap-inner {
+        height: 35em;
+    }
 }
 
 @media (min-width: 551px) and (max-width: 639px) {
@@ -133,6 +139,10 @@
 		width: 165px;
 		height: 105px;
 	}
+
+    .main__wrap-inner {
+        height: 35em;
+    }
 }
 
 @media (min-width: 741px) and (max-width: 820px) {

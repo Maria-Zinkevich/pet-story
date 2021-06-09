@@ -1,0 +1,49 @@
+.donate {
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	height: 13.75em; /*220px*/
+	padding-bottom: .625em; /*10px*/
+
+	@include tablet {
+		height: 18.3125em; /*293px*/
+		padding-bottom: 2.125em; /*34px*/
+	}
+
+	@include desktop-small {
+		height: 24.375em; /*390px*/
+		padding-bottom: 3.75em; /*60px*/
+	}
+
+	&__panda {
+		background: url(../assets/images/zoos-panda.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 18.625em; /*298px / 16px*/
+		height: 3.375em; /*54px / 16px*/
+
+		@include weigth-size-line-color(500, 1em, 140%, $white);
+		text-align: center;
+		text-transform: uppercase; 
+
+		background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+		border-radius: 1.5625em; /*25px / 16px*/
+		border: none;
+
+		cursor: pointer;
+		outline: none;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+
+		&:active {
+			background: $green;
+		}
+  	}
+}
