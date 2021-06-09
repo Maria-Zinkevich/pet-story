@@ -22,6 +22,10 @@
 	@include desktop-small {
 		padding: 0 1.875em; /*30px / 16px*/
 	}
+
+    @media (min-width: 1210px) {
+        padding: 0;
+    }
 }
 
 .main__wrap-inner {
@@ -37,6 +41,7 @@
     }
 
     @include desktop {
+        min-width: 1160px;
         height: 74.625em; /*1194px*/
     }
 }
