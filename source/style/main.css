@@ -370,27 +370,14 @@ template {
   max-width: 1160px;
   width: 100%;
   height: 100%;
-  padding: 0 1.25em;
-  /*20px / 16px*/
-}
-
-@media (min-width: 1000px) {
-  .main__container {
-    padding: 0 1.875em;
-    /*30px / 16px*/
-  }
-}
-
-@media (min-width: 1210px) {
-  .main__container {
-    padding: 0;
-  }
 }
 
 .main__wrap-inner {
   width: 100%;
   height: 29.6875em;
   /*475px*/
+  padding: 0 1.25em;
+  /*20px / 16px*/
 }
 
 @media (min-width: 640px) {
@@ -402,8 +389,9 @@ template {
 
 @media (min-width: 1000px) {
   .main__wrap-inner {
-    height: 56.25em;
-    /*900px*/
+    height: 50em;
+    padding: 0 1.875em;
+    /*30px / 16px*/
   }
 }
 
@@ -412,6 +400,12 @@ template {
     min-width: 1160px;
     height: 74.625em;
     /*1194px*/
+  }
+}
+
+@media (min-width: 1210px) {
+  .main__wrap-inner {
+    padding: 0;
   }
 }
 
@@ -4363,7 +4357,413 @@ template {
   background: url("../assets/icons/arrow-right.svg");
 }
 
+.main__animal-page {
+  position: relative;
+}
+
+.main__animal-page::before {
+  content: url("../assets/icons/zoos-strelitzia-icon-xm.svg");
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 11.8%;
+}
+
+@media (min-width: 640px) {
+  .main__animal-page::before {
+    content: url("../assets/icons/zoos-strelitzia-icon-md.svg");
+    bottom: 12.7%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main__animal-page::before {
+    content: url("../assets/icons/zoos-strelitzia-icon-lg.svg");
+    bottom: 16.5%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main__animal-page::before {
+    content: url("../assets/icons/zoos-strelitzia-icon-xl.svg");
+    bottom: 14.5%;
+  }
+}
+
+.main__animal-page::after {
+  content: url("../assets/icons/zoos-leav-icon-xm.svg");
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+
+@media (min-width: 640px) {
+  .main__animal-page::after {
+    content: url("../assets/icons/zoos-leav-icon-md.svg");
+    bottom: 10.5%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main__animal-page::after {
+    content: url("../assets/icons/zoos-leav-icon-lg.svg");
+    bottom: 13%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main__animal-page::after {
+    content: url("../assets/icons/zoos-leav-icon-xl.svg");
+    bottom: 11%;
+  }
+}
+
+.animal-info__heading {
+  margin: -1.5em auto .416666em 4.125em;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 120%;
+  color: #4B9200;
+  /*24px*/
+}
+
+@media (min-width: 640px) {
+  .animal-info__heading {
+    margin: 0 auto .416666em;
+    /*20px / 48px*/
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 120%;
+    color: #4B9200;
+    /*48px*/
+    text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .animal-info__heading {
+    margin-top: 2.083333em;
+    /*100px*/
+  }
+}
+
+@media (min-width: 1600px) {
+  .animal-info__heading {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+.animal-info__short {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 1000px) {
+  .animal-info__short {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 4.1875em;
+    /*67px / 16px*/
+  }
+}
+
+@media (min-width: 1600px) {
+  .animal-info__short {
+    padding-bottom: 1.25em;
+    /*20px / 16px*/
+    margin-bottom: 2.9375em;
+    /*47px / 16px*/
+    border-bottom: 1px solid #767474;
+  }
+}
+
+.animal-info__image {
+  min-width: 319px;
+  max-width: 635px;
+  width: 100%;
+  height: 12.0625em;
+  /*193px / 16px*/
+}
+
+.animal-info__image > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0;
+}
+
+@media (min-width: 640px) {
+  .animal-info__image {
+    width: 24.375em;
+    /*390px*/
+    height: 24.5625em;
+    /*393px*/
+  }
+}
+
+@media (min-width: 1000px) {
+  .animal-info__image {
+    min-width: 422px;
+    height: 26.375em;
+    /*422px*/
+    margin: 0 1.875em;
+    /*30px*/
+  }
+}
+
+@media (min-width: 1600px) {
+  .animal-info__image {
+    margin-left: 0;
+  }
+}
+
+.animal-info__content {
+  padding: 1.25em .6255em 2.5em;
+  /*20px 10px 40px / 16px*/
+}
+
+@media (min-width: 640px) {
+  .animal-info__content {
+    padding: 1.875em 1.25em 3.75em;
+    /*30px 20px 60px / 16px*/
+  }
+}
+
+@media (min-width: 1000px) {
+  .animal-info__content {
+    width: auto;
+    padding: 0;
+    margin-right: 1.875em;
+    /*30px*/
+  }
+}
+
+.animal-info__text {
+  margin-bottom: 1.875em;
+  /*30px / 16px*/
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 140%;
+  color: #ABABAB;
+  /*16px*/
+}
+
+@media (min-width: 640px) {
+  .animal-info__text {
+    font-size: 1.375em;
+    /*22px / 16px*/
+  }
+}
+
+@media (min-width: 1000px) {
+  .animal-info__text {
+    margin-bottom: 3em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .animal-info__text {
+    margin-bottom: 1.576923em;
+    /*41px / 26px*/
+    font-weight: 500;
+    font-size: 1.625em;
+    line-height: 140%;
+    color: #ABABAB;
+    /*26px / 16px*/
+  }
+}
+
+.animal-info__text-link, .animal-info__text-link:visited, .animal-info__subtitle-link, .animal-info__subtitle-link:visited {
+  color: #4b9200;
+  text-decoration: none;
+}
+
+.animal-info__text-link:hover, .animal-info__text-link:active, .animal-info__text-link:visited:hover, .animal-info__text-link:visited:active, .animal-info__subtitle-link:hover, .animal-info__subtitle-link:active, .animal-info__subtitle-link:visited:hover, .animal-info__subtitle-link:visited:active {
+  color: #f9804B;
+}
+
+.animal-info__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18.625em;
+  /*298px / 16px*/
+  height: 3.375em;
+  /*54px / 16px*/
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 1.5625em;
+  /*25px / 16px*/
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.animal-info__button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.animal-info__button:active {
+  background: #4b9200;
+}
+
+@media (min-width: 1000px) {
+  .animal-info__button {
+    margin-left: 0;
+  }
+}
+
+.animal-info__button > a {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 140%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.animal-info__subtitle {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 120%;
+  color: #000000;
+  /*24px / 16px*/
+}
+
+.animal-info__subtitle-description {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 140%;
+  color: #000000;
+  /*16px*/
+}
+
+.animal-info__full {
+  height: 25.3125em;
+  /*405px*/
+  padding: 0 .6255em;
+  /*10px / 16px*/
+  overflow: hidden;
+  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, black), to(transparent));
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, black), to(transparent));
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+
+@media (min-width: 640px) {
+  .animal-info__full {
+    height: 16em;
+    padding: 0 1.25em;
+    /*20px*/
+  }
+}
+
+@media (min-width: 1000px) {
+  .animal-info__full {
+    padding: 0 1.875em;
+    /*30px*/
+  }
+}
+
+.animal-info__full-wrap {
+  padding-bottom: 1.25em;
+  /*20px*/
+}
+
+.animal-info__full > h3 {
+  margin: .6255em 0;
+  /*10px*/
+}
+
+.animal-info__full-wrap > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .6255em;
+  /*10px*/
+}
+
+.animal-info__full-wrap > div > h3 {
+  margin: 0;
+}
+
+.animal-info__full-wrap > div > p {
+  width: 81.333333%;
+  /*244px / 300px*/
+  margin-top: .375em 0 0 .3125em;
+  /*6px 5px*/
+}
+
+.animal-info__read-button {
+  width: 8.0625em;
+  /*129px*/
+  height: 2.625em;
+  /*42px*/
+  margin: 1.25em auto 5em .6255em;
+  /*20px 80px 10px*/
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 140%;
+  color: #000000;
+  /*16px*/
+  background: #f1f3f2;
+  border: 0.0625em solid #333b41;
+  /*1px*/
+  border-radius: .3125em;
+  /*5px*/
+  outline: none;
+  cursor: pointer;
+}
+
+.animal-info__read-button:hover, .animal-info__read-button:active {
+  border: 0.0625em solid #4b9200;
+  /*1px*/
+  color: #4b9200;
+}
+
+@media (min-width: 640px) {
+  .animal-info__read-button {
+    margin: 1.875em auto 9.1875em 1.25em;
+    /*30px 147px 20px*/
+  }
+}
+
+@media (min-width: 1000px) {
+  .animal-info__read-button {
+    margin: 1.875em auto 8.75em 1.875em;
+    /*30px 140px*/
+  }
+}
+
+@media (min-width: 1600px) {
+  .animal-info__read-button {
+    margin-bottom: 11.25em;
+    /*180px*/
+  }
+}
+
 .donate {
+  z-index: 2;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4478,6 +4878,9 @@ template {
   .main__wrap-inner {
     height: 35em;
   }
+  .animal-info__heading {
+    margin-top: -3.5em;
+  }
 }
 
 @media (min-width: 451px) and (max-width: 550px) {
@@ -4516,9 +4919,19 @@ template {
   .main__wrap-inner {
     height: 35em;
   }
+  .main__animal-page::before {
+    bottom: 11.5%;
+  }
+  .animal-info__heading {
+    margin-top: -2.5em;
+  }
+  .animal-info__image {
+    height: 15.1875em;
+    /*243px / 16px*/
+  }
 }
 
-@media (min-width: 551px) and (max-width: 639px) {
+@media (min-width: 551px) and (max-width: 640px) {
   .map__image--gorilla {
     top: 75%;
   }
@@ -4554,6 +4967,20 @@ template {
   }
   .main__wrap-inner {
     height: 35em;
+  }
+  .main__animal-page::before {
+    bottom: 10.9%;
+  }
+  .main__animal-page::after {
+    bottom: 9.5%;
+  }
+  .animal-info__heading {
+    margin: .5em auto .416666em 3.125em;
+    font-size: 2em;
+  }
+  .animal-info__image {
+    height: 17.6875em;
+    /*283px*/
   }
 }
 
@@ -4602,6 +5029,26 @@ template {
   }
   .map__tooltip--alligator {
     top: calc(64% + 5px);
+  }
+  .main__animal-page::before {
+    bottom: 15%;
+  }
+  .main__animal-page::after {
+    bottom: 12.5%;
+  }
+  .animal-info__short {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .animal-info__image {
+    margin-left: 1.25em;
+    /*20px*/
+  }
+  .animal-info__content {
+    width: 57%;
+    padding-top: 0;
   }
 }
 
@@ -4693,11 +5140,31 @@ template {
   .testimonials__button {
     margin-left: 0;
   }
+  .animal-info__content {
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 1.18182em;
+    line-height: 140%;
+    color: #ABABAB;
+    /*26px / 22px*/
+  }
 }
 
 @media (max-height: 530px) {
   .feedback {
     top: 0;
+  }
+}
+
+@media (min-width: 1210px) {
+  .animal-info__image {
+    margin-left: 0;
+  }
+  .animal-info__full {
+    padding: 0;
+  }
+  .animal-info__read-button {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

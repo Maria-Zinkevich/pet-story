@@ -225,6 +225,7 @@
 			margin-top: 2.5em; /*40px / 16px*/
 		}
 	}
+    
 	&__button > a {
 		@include weigth-size-line-color(500, 1em, 140%, $white);
 		text-align: center;

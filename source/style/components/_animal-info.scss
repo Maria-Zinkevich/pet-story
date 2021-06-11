@@ -1,0 +1,294 @@
+.main__animal-page {
+    position: relative;
+
+    &::before {
+        content: url("../assets/icons/zoos-strelitzia-icon-xm.svg");
+    
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        bottom: 11.8%;
+
+        @include tablet {
+            content: url("../assets/icons/zoos-strelitzia-icon-md.svg");
+
+            bottom: 12.7%;
+        }
+
+        @include desktop-small {
+            content: url("../assets/icons/zoos-strelitzia-icon-lg.svg");
+
+            bottom: 16.5%;
+        }
+
+        @include desktop {
+            content: url("../assets/icons/zoos-strelitzia-icon-xl.svg");
+
+            bottom: 14.5%;
+        }
+    }
+
+    &::after {
+        content: url("../assets/icons/zoos-leav-icon-xm.svg");
+    
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+
+        @include tablet {
+            content: url("../assets/icons/zoos-leav-icon-md.svg");
+
+            bottom: 10.5%;
+        }
+
+        @include desktop-small {
+            content: url("../assets/icons/zoos-leav-icon-lg.svg");
+
+            bottom: 13%;
+        }
+
+        @include desktop {
+            content: url("../assets/icons/zoos-leav-icon-xl.svg");
+
+            bottom: 11%;
+        }
+    }
+}
+
+.animal-info {
+    &__heading {
+        margin: -1.5em auto .416666em 4.125em;
+
+        @include weigth-size-line-color(400, 1.5em, 120%, #4B9200); /*24px*/
+
+        @include tablet {
+            margin: 0 auto .416666em; /*20px / 48px*/
+
+            @include weigth-size-line-color(500, 3em, 120%, #4B9200); /*48px*/
+            text-align: center;
+        }
+
+        @include desktop-small {
+            margin-top: 2.083333em; /*100px*/
+        }
+
+        @include desktop {
+            margin-top: 0;
+
+            text-align: left;
+        }
+    }
+
+    &__short {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include desktop-small {
+            flex-direction: row;
+            margin-bottom: 4.1875em; /*67px / 16px*/
+        }
+
+        @include desktop {
+            padding-bottom: 1.25em; /*20px / 16px*/
+            margin-bottom: 2.9375em; /*47px / 16px*/
+
+            border-bottom: 1px solid #767474;
+        }
+    }
+
+    &__image {
+        min-width: 319px;
+        max-width: 635px;
+        width: 100%;
+        height: 12.0625em; /*193px / 16px*/
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-top: 0;
+        }
+
+        @include tablet {
+            width: 24.375em; /*390px*/
+            height: 24.5625em; /*393px*/
+        }
+
+        @include desktop-small {
+            min-width: 422px;
+            height: 26.375em; /*422px*/
+            margin: 0 1.875em; /*30px*/
+        }
+
+        @include desktop {
+            margin-left: 0;
+        }
+    }
+
+    &__content {
+        padding: 1.25em .6255em 2.5em; /*20px 10px 40px / 16px*/
+
+        @include tablet {
+            padding: 1.875em 1.25em 3.75em; /*30px 20px 60px / 16px*/
+        }
+
+        @include desktop-small {
+            width: auto;
+            padding: 0;
+            margin-right: 1.875em; /*30px*/
+        }
+    }
+
+    &__text {
+        margin-bottom: 1.875em; /*30px / 16px*/
+
+        @include weigth-size-line-color(400, 1em, 140%, #ABABAB); /*16px*/
+
+        @include tablet {
+            font-size: 1.375em; /*22px / 16px*/
+        }
+
+        @include desktop-small {
+            margin-bottom: 3em;
+        }
+
+        @include desktop {
+            margin-bottom: 1.576923em; /*41px / 26px*/
+
+            @include weigth-size-line-color(500, 1.625em, 140%, #ABABAB); /*26px / 16px*/
+        }
+    }
+
+    &__text-link,
+    &__text-link:visited,
+    &__subtitle-link,
+    &__subtitle-link:visited {
+        color: $green;
+        text-decoration: none;
+        
+        &:hover,
+        &:active {
+          color: $orange-color;
+        }
+    }
+
+    &__button {
+		display: flex;
+        justify-content: center;
+		align-items: center;
+		width: 18.625em; /*298px / 16px*/
+		height: 3.375em; /*54px / 16px*/
+
+		background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+		border-radius: 1.5625em; /*25px / 16px*/
+		border: none;
+
+		cursor: pointer;
+		outline: none;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+
+		&:active {
+			background: $green;
+		}
+
+        @include desktop-small {
+            margin-left: 0;
+        }
+	}
+    
+	&__button > a {
+		@include weigth-size-line-color(500, 1em, 140%, $white);
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+    &__subtitle {
+        @include weigth-size-line-color(400, 1.5em, 120%, $black); /*24px / 16px*/
+    }
+
+    &__subtitle-description {
+        @include weigth-size-line-color(400, 1em, 140%, $black); /*16px*/
+    }
+
+    &__full {
+        height: 25.3125em; /*405px*/
+        padding: 0 .6255em; /*10px / 16px*/
+
+        overflow: hidden;
+
+        mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+
+        @include tablet {
+            height: 16em;
+            padding: 0 1.25em; /*20px*/
+        }
+
+        @include desktop-small {
+            padding: 0 1.875em; /*30px*/
+        }
+    }
+
+    &__full-wrap {
+        padding-bottom: 1.25em; /*20px*/
+    }
+
+    &__full > h3 {
+        margin: .6255em 0; /*10px*/
+    }
+
+    &__full-wrap > div {
+        display: flex;
+        margin-bottom: .6255em; /*10px*/
+    }
+
+    &__full-wrap > div > h3 {
+        margin: 0;
+    }
+
+    &__full-wrap > div > p {
+        width: 81.333333%; /*244px / 300px*/
+        margin-top: .375em 0 0 .3125em; /*6px 5px*/
+    }
+
+    &__read-button {
+        width: 8.0625em; /*129px*/
+        height: 2.625em; /*42px*/
+        margin: 1.25em auto 5em .6255em; /*20px 80px 10px*/
+       
+        @include weigth-size-line-color(400, 1em, 140%, $black); /*16px*/
+        background: #f1f3f2;
+        border: .0625em solid $black-blue; /*1px*/
+        border-radius: .3125em; /*5px*/
+
+        outline: none;
+        cursor: pointer;
+    
+        &:hover,
+        &:active {
+            border: .0625em solid $green; /*1px*/
+            color: $green;
+        }
+
+        @include tablet {
+            margin: 1.875em auto 9.1875em 1.25em; /*30px 147px 20px*/
+        }
+
+        @include desktop-small {
+            margin: 1.875em auto 8.75em 1.875em; /*30px 140px*/
+        }
+
+        @include desktop {
+            margin-bottom: 11.25em; /*180px*/
+        }
+    }
+}
+  
+
+
+  
