@@ -7,7 +7,7 @@
 	}
 
 	@include desktop {
-		top: 0;
+		top: -40.5625em;
 	}
 
 	&__container {
@@ -45,7 +45,6 @@
 		@include tablet {
 			min-width: 30.9375em; /*495px*/
 			height: 17.375em; /*278px*/
-		  
 		}
 	
 		@include desktop-small {

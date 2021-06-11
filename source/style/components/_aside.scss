@@ -23,10 +23,9 @@
     }
 
     @include desktop {
-        position: fixed;
-        left: 1.875%; /*30px / 1600px*/
         width: 6.1875em; /*99px*/
         padding: 9px 0 8px;
+        margin-left: -13em;
     }
 
     &__wrap-inner {

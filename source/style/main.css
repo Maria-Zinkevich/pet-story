@@ -3856,12 +3856,10 @@ template {
 
 @media (min-width: 1600px) {
   .aside {
-    position: fixed;
-    left: 1.875%;
-    /*30px / 1600px*/
     width: 6.1875em;
     /*99px*/
     padding: 9px 0 8px;
+    margin-left: -13em;
   }
 }
 
@@ -4027,7 +4025,7 @@ template {
 
 @media (min-width: 1600px) {
   .camera {
-    top: 0;
+    top: -40.5625em;
   }
 }
 
