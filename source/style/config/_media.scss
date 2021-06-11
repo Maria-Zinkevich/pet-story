@@ -99,10 +99,6 @@
         height: 35em;
     }
 
-    .main__animal-page::before {
-        bottom: 11.5%;
-    }
-
     .animal-info__heading {
         margin-top: -2.5em;
     }
@@ -158,14 +154,6 @@
 
     .main__wrap-inner {
         height: 35em;
-    }
-
-    .main__animal-page::before {
-        bottom: 10.9%;
-    }
-
-    .main__animal-page::after {
-        bottom: 9.5%;
     }
 
     .animal-info__heading {
@@ -233,14 +221,6 @@
 	.map__tooltip--alligator {
 		top: calc(64% + 5px);
 	}
-
-    .main__animal-page::before {
-        bottom: 15%;
-    }
-
-    .main__animal-page::after {
-        bottom: 12.5%;
-    }
 
     .animal-info__short {
         flex-direction: row;

@@ -8,6 +8,60 @@
 	height: 13.75em; /*220px*/
 	padding-bottom: .625em; /*10px*/
 
+    &::before {
+        content: url("../assets/icons/zoos-strelitzia-icon-xm.svg");
+    
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: -28%;
+
+        @include tablet {
+            content: url("../assets/icons/zoos-strelitzia-icon-md.svg");
+
+            top: -36%;
+        }
+
+        @include desktop-small {
+            content: url("../assets/icons/zoos-strelitzia-icon-lg.svg");
+
+            top: -35%;
+        }
+
+        @include desktop {
+            content: url("../assets/icons/zoos-strelitzia-icon-xl.svg");
+
+            top: -59%;
+        }
+    }
+
+    &::after {
+        content: url("../assets/icons/zoos-leav-icon-xm.svg");
+    
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: -30%;
+
+        @include tablet {
+            content: url("../assets/icons/zoos-leav-icon-md.svg");
+
+            top: -40%;
+        }
+
+        @include desktop-small {
+            content: url("../assets/icons/zoos-leav-icon-lg.svg");
+
+            top: -43%;
+        }
+
+        @include desktop {
+            content: url("../assets/icons/zoos-leav-icon-xl.svg");
+
+            top: -53%;
+        }
+    }
+
 	@include tablet {
 		height: 18.3125em; /*293px*/
 		padding-bottom: 2.125em; /*34px*/

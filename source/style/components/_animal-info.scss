@@ -1,61 +1,3 @@
-.main__animal-page {
-    position: relative;
-
-    &::before {
-        content: url("../assets/icons/zoos-strelitzia-icon-xm.svg");
-    
-        z-index: 1;
-        position: absolute;
-        left: 0;
-        bottom: 11.8%;
-
-        @include tablet {
-            content: url("../assets/icons/zoos-strelitzia-icon-md.svg");
-
-            bottom: 12.7%;
-        }
-
-        @include desktop-small {
-            content: url("../assets/icons/zoos-strelitzia-icon-lg.svg");
-
-            bottom: 16.5%;
-        }
-
-        @include desktop {
-            content: url("../assets/icons/zoos-strelitzia-icon-xl.svg");
-
-            bottom: 14.5%;
-        }
-    }
-
-    &::after {
-        content: url("../assets/icons/zoos-leav-icon-xm.svg");
-    
-        z-index: 1;
-        position: absolute;
-        right: 0;
-        bottom: 10%;
-
-        @include tablet {
-            content: url("../assets/icons/zoos-leav-icon-md.svg");
-
-            bottom: 10.5%;
-        }
-
-        @include desktop-small {
-            content: url("../assets/icons/zoos-leav-icon-lg.svg");
-
-            bottom: 13%;
-        }
-
-        @include desktop {
-            content: url("../assets/icons/zoos-leav-icon-xl.svg");
-
-            bottom: 11%;
-        }
-    }
-}
-
 .animal-info {
     &__heading {
         margin: -1.5em auto .416666em 4.125em;
@@ -231,6 +173,24 @@
 
         @include desktop-small {
             padding: 0 1.875em; /*30px*/
+        }
+    }
+
+    &__full-on {
+        height: 100%;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    &__full-on-leav {
+        @include desktop {
+            bottom: 6%;
+        }
+    }
+
+    &__full-on-strelitzia {
+        @include desktop {
+            bottom: 11.5%;
         }
     }
 
