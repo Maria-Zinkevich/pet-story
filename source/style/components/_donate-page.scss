@@ -1,0 +1,496 @@
+.intro {
+	width: 100%;
+	height: 11.6875em; /*187px / 16px*/
+	background: url("../assets/images/giant-panda.jpg") no-repeat top 44% center;
+	background-size: cover;
+
+	@include tablet {
+		height: 20.9375em; /*335px / 16px*/
+	}
+
+	@include desktop-small {
+		height: 24.375em; /*390px / 16px*/
+	}
+}
+
+.donate-section {
+	height: 100%;
+	padding: 0;
+
+	background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+
+	opacity: 0.9;
+	
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1160px;
+		width: 100%;
+		height: 100%;  
+		padding: 1.875em .6255em 1.25em; /*30px 10px 20px / 16px*/
+
+		@include tablet {
+			padding: 1.875em 1.25em 2.875em; /*30px 20px 46px / 16px*/
+		}
+
+		@include desktop-small {
+			padding: 2.5em 1.875em 1.875em; /*40px 30px / 16px*/
+		}
+
+		@include desktop {
+			padding-bottom: 180px;
+		}
+	}
+
+	&__preface {
+		margin-bottom: .833333em; /*20px / 24px*/
+
+		@include weigth-size-line-color(400, 1.5em, 120%, $white); /*24px*/
+		text-transform: uppercase;
+
+		@include desktop-small {
+			@include weigth-size-line-color(400, 2.25em, 130%, $white); /*36px*/
+		}
+	}
+
+	&__description {
+		@include weigth-size-line-color(400, 1em, 140%, $white); /*16px*/
+	}
+
+	&__description-bold {
+		font-weight: 500;
+	}
+
+	&__information {
+		margin: 1.25em auto 1.25em 0; /*30px / 24px*/
+
+		@include weigth-size-line-color(400, 1.5em, 120%, $orange-light); /*24px / 16px*/
+		text-transform: capitalize;
+
+		@include tablet {
+			margin: .833333em auto .833333em 0; /*30px / 36px*/
+
+			@include weigth-size-line-color(400, 2.25em, 130%, $orange-light); /*36px / 16px*/ 
+		}
+
+		@include desktop-small {
+			margin: 1.111111em auto 1.111111em 0; /*40px / 36px*/ 
+		}
+	}
+
+	&__container-inner {
+		display: flex;
+		flex-direction: column;
+		max-width: 1160px;
+		width: 100%;
+		height: 100%;
+		padding: 1.25em 0; /*20px / 16px*/
+		margin: 0;
+
+		background: rgba(253, 253, 255, 0.52);
+		border-radius: 1.25em; /*20px /16px*/
+
+		@include tablet {
+			padding: 1.875em 0; /*30px /16px*/
+		}
+
+		@include desktop-small {
+			padding: 1.25em 0 2.8125em; /*20px 45px / 16px*/
+		}
+
+		@include desktop {
+			padding: 2.5em 0 3.75em; /*40px 60px / 16px*/
+		}
+	}
+
+	&__info {
+		margin-bottom: 2.25em; /*36px / 16px*/
+
+		@include tablet {
+			margin-bottom: 4.041666em; /*97px / 24px*/
+		}
+
+		@include desktop-small {
+			margin-bottom: 4.458333em; /*107px / 24px*/
+		}
+	}
+
+	&__title {
+		margin-bottom: .416666em; /*10px / 24px*/
+
+		@include weigth-size-line-color(400, 1.5em, 120%, $orange-light); /*24px / 16px*/
+		text-align: center;
+
+		@include tablet {
+		   font-size: 3em; /*48px / 16px*/
+		}
+
+		@include desktop-small {
+			margin-bottom: .208333em; /*10px / 48px*/
+		}
+
+		@include desktop {
+			margin-bottom: .416666em; /*20px / 48px*/
+		}
+	}
+
+	&__title-description {
+		@include weigth-size-line-color(400, 1em, 120%, $black-grey); /*16px*/
+		text-align: center;
+
+		@include tablet {
+			font-size: 1.5em; /*24px / 16px*/
+		}
+	}
+
+	&__animal {
+		display: flex;
+		align-items: center;
+		max-width: 517px;
+		width: 100%;
+		margin: auto;
+
+		@include tablet {
+			margin: auto auto 2.5em; /*40px / 16px*/
+		}
+
+		@include desktop-small {
+			margin-bottom: 3em; /*48px / 16px*/
+		}
+
+		@include desktop {
+			margin-bottom: 5.4375em; /*87px / 16px*/
+		}
+	}
+
+	&__animal-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__days-amount {
+		@include weigth-size-line-color(500, 2.5em, 80%, $black); /*40px / 16px*/
+
+		@include tablet {
+			margin-bottom: .138888em; /*10px / 72px*/
+			font-size: 4.5em; /*72px / 16px*/
+		}
+	}
+
+	&__diet {
+		@include weigth-size-line-color(400, .625em, 140%, $black-blue); /*10px / 16px*/
+
+		@include tablet {
+			font-size: 1em; /*16px*/
+		}
+	}
+
+	&__multiply {
+		width: .5em; /*8px*/
+		height: .5em;
+		background: url("../assets/icons/multiply-icon.svg") no-repeat center;
+
+		@include tablet {
+			width: .875em; /*14px*/
+			height: .875em;
+		}
+	}
+
+	&__image {
+		width: 9.5em; /*152px /16px*/
+		height: 7em; /*112px /16px*/
+
+		@include tablet {
+			width: 16.75em; /*268px /16px*/
+			height: 12.375em; /*198px /16px*/
+		}
+	}
+
+	&__amount-block {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	&__amount-title {
+		margin-bottom: .5em; /*8px*/
+		@include weigth-size-line-color(400, 1em, 140%, $black); /*16px*/
+
+		@include desktop-small {
+			margin-left: 6.914894%; /*65px / 940px*/
+			margin-bottom: 1.0625em; /*17px*/
+		}
+	}
+
+	&__radio-buttons {
+		position: relative;
+
+		display: flex;
+		justify-content: space-between;
+		max-width: 976px;
+		height: .84375em; /*13.5px / 16px*/
+		padding: 0 5.8333333%; /*17px / 300px*/
+		margin-bottom: 2.625em; /*42px / 16px*/
+
+		background: #404950;
+		border-radius: .0625em; /*1px*/
+
+		@include tablet {
+			height: 1.6875em; /*27px / 16px*/
+			margin-bottom: 5.5em; /*88px / 16px*/
+		}
+
+		@include desktop-small {
+			margin: auto 6.914894% 6.75em; /*65px / 940px; 108px / 16px*/
+		}
+
+		@include desktop {
+			margin: auto 7.931034% 6.75em; /*92px / 1160px; 108px / 16px*/;
+		}
+	}
+
+	&__radio-buttons-line {
+		position: absolute;
+		top: .375em; /*6px / 16px*/
+		left: 50%;
+
+		height: .125em; /*2px / 16px*/
+		width: 87.333%;
+		
+		transform: translate(-50%, -50%);
+		background: #72828e;
+
+		@include tablet {
+			top: .75em; /*12px / 16px*/
+		}
+
+		@include desktop-small {
+			width: 86.333%;
+		}
+	}
+
+	&__radio-button {
+		width: .3125em; /*5px / 16px*/
+		margin: 0;
+	}
+	
+	&__radio {
+		position: relative;
+		visibility: hidden;
+
+		&:after {
+			z-index: 1;
+			position: relative;
+			content: '';
+			bottom: 58%;
+	
+			width: .3125em; /*5px / 16px*/
+			height: .3125em;
+			border-radius: 50%;
+		   
+			
+			background-color: $yellow;
+			
+			display: inline-block;
+			visibility: visible;
+
+			@include tablet {
+				top: 1px;
+
+				width: .625em; /*10px / 16px*/
+				height: .625em;
+			}
+		}
+	
+		&:checked:before {
+			content: url("../assets/icons/roller-icon.svg");
+			position: absolute;
+			top: -.3125em; /*5px / 16px*/
+			left: -.4625em; /*7.4px / 16px*/
+
+			display: inline-block;
+			visibility: visible;
+
+			@include tablet {
+				content: url("../assets/icons/roller-icon-md.svg");
+				top: -.5625em; /*9px*/
+				left: -.9625em; /*15.4px*/
+			}
+		}
+	}
+
+	&__radio:checked + &__label {
+		color: $orange-light;
+	}
+
+	&__radio:checked + &__label::before {
+		@media only screen and (min-width: 320px) {
+			content: url("../assets/icons/dollar-icon-check.svg");
+		}
+		
+		@media only screen and (min-width: 640px) {
+			content: url("../assets/icons/dollar-icon-check-md.svg");
+		}
+	}
+
+	&__label {
+		position: relative;
+		display: flex;
+		min-width: 7%;
+		margin-left: -.7em;
+
+		@include weigth-size-line-color(500, .8125em, 140%, $black-blue); /*13px / 16px*/
+		cursor: pointer;
+	
+		&::before {
+			content: url("../assets/icons/dollar-icon.svg");
+			margin-top: .125em; /*2px / 16px*/
+
+			@include tablet {
+				content: url("../assets/icons/dollar-icon-md.svg"); 
+			}
+		}
+
+		@include tablet {
+			margin-top: .807692em; /*21px / 26px*/
+			font-size: 1.625em; /*26px /16px*/
+		}
+	}
+
+	&__amount-field {
+		position: relative;
+		width: 11.25em; /*180px/ 16px*/
+		height: 2.625em; /*42px/ 16px*/
+		margin-left: 0;
+
+		@include tablet {
+			margin-left: 1.666667%; /*10px / 600px*/
+		}
+
+		@include desktop-small {
+			margin-left: 2.659574%; /*25px / 940px*/
+		}
+
+		@include desktop {
+			margin-left: 7.931034%; /*92px / 1160px*/
+		}
+	}
+	
+	&__input {
+		outline: none;
+		padding: 0 .625em 0 .375em; /*10px 6px*/
+		width: 100%;
+		height: 100%;
+		
+		@include weigth-size-line-color(400, 1em, 140%, #929699);
+
+		border: .0625em solid #929699; /*1px / 16px*/
+		border-radius: .125em; /*2px / 16px*/
+
+		background-color: transparent;
+		background-image: url("../assets/icons/dollar-icon-input.svg");
+		background-repeat: no-repeat;
+		background-position: 94%;
+	}
+	
+	&__inputt::placeholder {
+		color: #929699;
+	}
+
+	&__period {
+		display: flex;
+		justify-content: space-between;
+		width: 12.3125em; /*197px / 16px*/
+		margin: 1.875em auto; /*30px*/
+
+		@include tablet {
+			margin-top: 2.625em; /*42px / 16px*/
+		}
+
+		@include desktop-small {
+			margin: .5em auto 2.5em; /*8px 40px / 16px*/
+		}
+	}
+
+	&__period-input {
+		position: relative;
+		visibility: hidden;
+
+		&:after {
+			position: relative;
+			content: '';
+			bottom: .25em; /*4px*/
+
+			width: 1em; /*16px*/
+			height: 1em;
+			border-radius: 50%;
+			
+			
+			background-color: transparent;
+			border: .125em solid $orange-light; /*2px / 16px*/
+			
+			display: inline-block;
+			visibility: visible;
+		}
+
+		&:checked:after {
+			position: relative;
+			content: '';
+			bottom: .25em; /*4px*/
+
+			width: .71875em; /*11.5px / 16px*/
+			height: .71875em;
+			border-radius: 50%;
+			
+			
+			background-color: transparent;
+			border: .125em solid $orange-light; /*2px / 16px*/
+			
+			display: inline-block;
+			visibility: visible;
+		}
+	}
+
+	&__period-label {
+		margin-top: -.1875em; /*3px / 16px*/
+		margin-left: .9375em; /*15px*/
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 18.625em; /*298px / 16px*/
+		height: 3.375em; /*54px / 16px*/
+		margin-bottom: 1.875em; /*30px*/
+
+		background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+		border-radius: 1.5625em; /*25px / 16px*/
+		border: none;
+
+		cursor: pointer;
+		outline: none;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+
+		&:active {
+			background: $green;
+		}
+	}
+
+	&__button > a {
+		@include weigth-size-line-color(500, 1em, 140%, $white);
+	}
+
+	&__share {
+		@include weigth-size-line-color(400, 1em, 140%, $black-blue);
+		text-align: center;
+	}
+}

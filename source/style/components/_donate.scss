@@ -8,7 +8,7 @@
 	height: 13.75em; /*220px*/
 	padding-bottom: .625em; /*10px*/
 
-    &::before {
+    &__block::before {
         content: url("../assets/icons/zoos-strelitzia-icon-xm.svg");
     
         z-index: 1;
@@ -35,7 +35,7 @@
         }
     }
 
-    &::after {
+    &__block::after {
         content: url("../assets/icons/zoos-leav-icon-xm.svg");
     
         z-index: 1;
