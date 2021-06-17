@@ -3,6 +3,7 @@
         margin: -1.5em auto .416666em 4.125em;
 
         @include weigth-size-line-color(400, 1.5em, 120%, #4B9200); /*24px*/
+        text-transform: capitalize;
 
         @include tablet {
             margin: 0 auto .416666em; /*20px / 48px*/
@@ -202,6 +203,10 @@
         margin: .6255em 0; /*10px*/
     }
 
+    &__full > ul {
+        padding-left: 1em;
+    }
+
     &__full-wrap > div {
         display: flex;
         margin-bottom: .6255em; /*10px*/
@@ -213,7 +218,7 @@
 
     &__full-wrap > div > p {
         width: 81.333333%; /*244px / 300px*/
-        margin-top: .375em 0 0 .3125em; /*6px 5px*/
+        margin: .375em 0 0 .3125em; /*6px 5px*/
     }
 
     &__read-button {

@@ -4362,6 +4362,7 @@ template {
   line-height: 120%;
   color: #4B9200;
   /*24px*/
+  text-transform: capitalize;
 }
 
 @media (min-width: 640px) {
@@ -4648,6 +4649,10 @@ template {
   /*10px*/
 }
 
+.animal-info__full > ul {
+  padding-left: 1em;
+}
+
 .animal-info__full-wrap > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4663,7 +4668,7 @@ template {
 .animal-info__full-wrap > div > p {
   width: 81.333333%;
   /*244px / 300px*/
-  margin-top: .375em 0 0 .3125em;
+  margin: .375em 0 0 .3125em;
   /*6px 5px*/
 }
 
@@ -4809,6 +4814,11 @@ template {
 
 .donate__panda {
   background: url(../assets/images/zoos-panda.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.donate__gorilla {
+  background: url(../assets/images/zoos-gorillas.jpg) no-repeat center;
   background-size: cover;
 }
 

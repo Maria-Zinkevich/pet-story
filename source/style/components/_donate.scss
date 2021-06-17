@@ -77,6 +77,11 @@
 		background-size: cover;
 	}
 
+    &__gorilla {
+        background: url(../assets/images/zoos-gorillas.jpg) no-repeat center;
+		background-size: cover;
+    }
+
 	&__button {
 		display: flex;
 		justify-content: center;
