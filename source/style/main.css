@@ -4827,6 +4827,11 @@ template {
   background-size: cover;
 }
 
+.donate__alligator {
+  background: url(../assets/images/zoos-alligator-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
 .donate__button {
   display: -webkit-box;
   display: -ms-flexbox;
