@@ -194,6 +194,82 @@
 				</div>
 			</div>
 		</footer>
+        <div class="donate-modal__wrap">
+            <div class="donate-modal">
+                <form class="donate-modal__form">
+                    <h3 class="donate-modal__title">Donation Information</h3>
+                    <div class="donate-modal__wrap-inner">
+                        <label class="donate-modal__label" for="input-amount">Amount:</label>
+                        <input class="donate-modal__input donate-modal__input-amount" id="input-amount" type="number" placeholder="1000">
+                    </div>
+                    <h3 class="donate-modal__title">Additional information</h3>
+                    <div class="donate-modal__wrap-inner">
+                        <div class="donate-modal__checkbox-input-wrap">
+                            <input class="donate-modal__checkbox" id="checkbox-share" type="checkbox">
+                            <label class="donate-modal__label-checkbox" for="checkbox">Share with your friends on social networks</label>
+                        </div>
+                        <ul class="donate-modal__social-list">
+                            <li class="donate-modal__social-item">
+                                <a href="#" class="donate-modal__social-link donate-modal__social-link--facebook">
+                                    <span class="donate-modal__social-text">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="donate-modal__social-item">
+                                <a href="#" class="donate-modal__social-link donate-modal__social-link--instagram">
+                                    <span class="donate-modal__social-text">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="donate-modal__social-item">
+                                <a href="#" class="donate-modal__social-link donate-modal__social-link--twitter">
+                                    <span class="donate-modal__social-text">Twitter</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="donate-modal__checkbox-input-wrap">
+                            <p class="donate-modal__checkbox-text">
+                                Corporate:
+                            </p>
+                            <input class="donate-modal__checkbox" id="checkbox-corporate" type="checkbox">
+                            <label class="donate-modal__label-checkbox" for="checkbox-corporate">This donation is on behalf of a company</label>
+                        </div>
+                        <div class="donate-modal__checkbox-input-wrap">
+                            <p class="donate-modal__checkbox-text">
+                                Anonymous:
+                            </p>
+                            <input class="donate-modal__checkbox-anonymous" id="checkbox-anonymous" type="checkbox">
+                            <label class="donate-modal__label-checkbox" for="checkbox-anonymous">I prefer to make this donation anonymously</label>
+                        </div>
+                        <div class="donate-modal__checkbox-textarea-wrap">
+                            <label class="donate-modal__label" for="checkbox-anonymous">Comments:</label>
+                            <textarea class="donate-modal__comments" name="textarea-comments" id="textarea-comments" type="checkbox"></textarea>
+                        </div> 
+                    </div>
+                    <h3 class="donate-modal__title">Payment information</h3>
+                    <div class="donate-modal__wrap-inner">
+                        <label class="donate-modal__label" for="input-name">Cardholder's Name:</label>
+                        <input class="donate-modal__input-name" id="input-name" type="text">
+                    </div>
+                    <div class="donate-modal__wrap-inner">
+                        <label class="donate-modal__label" for="input-card-type">Card Type:</label>
+                        <input class="donate-modal__input-card-type" id="input-card-type" type="text">
+                    </div>
+                    <div class="donate-modal__wrap-inner">
+                        <label class="donate-modal__label" for="input-card-number">Credit Card Number:</label>
+                        <input class="donate-modal__input-card-number" id="input-card-number" type="text">
+                    </div>
+                    <div class="donate-modal__wrap-inner">
+                        <label class="donate-modal__label" for="input-card-exp">Card Expiration:</label>
+                        <input class="donate-modal__input-card-exp" id="input-card-exp" type="text">
+                        <input class="donate-modal__input-card-exp" id="input-card-expt" type="text">
+                    </div>
+                    <div class="donate-modal__wrap-inner">
+                        <label class="donate-modal__label" for="input-card-code">Card Security Code:</label>
+                        <input class="donate-modal__input-card-code" id="input-card-code" type="number" placeholder="8888">
+                    </div>
+                    <button href="#" class="donate-modal__button" type="submit">Donate now</button>
+                </form>
+            </div>
+        </div>
 	</div>
 </body>
 </html>
