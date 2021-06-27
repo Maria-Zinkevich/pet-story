@@ -164,9 +164,6 @@
 
         overflow: hidden;
 
-        mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
-
         @include tablet {
             height: 16em;
             padding: 0 1.25em; /*20px*/
@@ -175,6 +172,11 @@
         @include desktop-small {
             padding: 0 1.875em; /*30px*/
         }
+    }
+
+    &__full--shadow {
+        mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
     }
 
     &__full-on {

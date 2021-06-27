@@ -4600,10 +4600,6 @@ template {
   padding: 0 .6255em;
   /*10px / 16px*/
   overflow: hidden;
-  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, black), to(transparent));
-  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, black), to(transparent));
-  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 @media (min-width: 640px) {
@@ -4619,6 +4615,13 @@ template {
     padding: 0 1.875em;
     /*30px*/
   }
+}
+
+.animal-info__full--shadow {
+  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, black), to(transparent));
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, black), to(transparent));
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 .animal-info__full-on {
