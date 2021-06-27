@@ -5466,19 +5466,19 @@ template {
   background-position: 94%;
 }
 
-.donate-section__inputt::-webkit-input-placeholder {
+.donate-section__input::-webkit-input-placeholder {
   color: #929699;
 }
 
-.donate-section__inputt:-ms-input-placeholder {
+.donate-section__input:-ms-input-placeholder {
   color: #929699;
 }
 
-.donate-section__inputt::-ms-input-placeholder {
+.donate-section__input::-ms-input-placeholder {
   color: #929699;
 }
 
-.donate-section__inputt::placeholder {
+.donate-section__input::placeholder {
   color: #929699;
 }
 
@@ -5531,19 +5531,9 @@ template {
 }
 
 .donate-section__period-input:checked:after {
-  position: relative;
-  content: '';
-  bottom: .25em;
-  /*4px*/
-  width: .71875em;
-  /*11.5px / 16px*/
-  height: .71875em;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 0.125em solid #fe9013;
+  background-color: #4b9200;
+  border: 0.125em solid #4b9200;
   /*2px / 16px*/
-  display: inline-block;
-  visibility: visible;
 }
 
 .donate-section__period-label {

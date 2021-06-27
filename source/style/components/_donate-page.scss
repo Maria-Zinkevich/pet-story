@@ -394,7 +394,7 @@
 		background-position: 94%;
 	}
 	
-	&__inputt::placeholder {
+	&__input::placeholder {
 		color: #929699;
 	}
 
@@ -435,20 +435,8 @@
 		}
 
 		&:checked:after {
-			position: relative;
-			content: '';
-			bottom: .25em; /*4px*/
-
-			width: .71875em; /*11.5px / 16px*/
-			height: .71875em;
-			border-radius: 50%;
-			
-			
-			background-color: transparent;
-			border: .125em solid $orange-light; /*2px / 16px*/
-			
-			display: inline-block;
-			visibility: visible;
+            background-color: $green;
+			border: .125em solid $green; /*2px / 16px*/
 		}
 	}
 
