@@ -5585,6 +5585,7 @@ template {
   font-size: 1em;
   line-height: 140%;
   color: #ffffff;
+  text-align: center;
 }
 
 .donate-section__share {
@@ -5613,7 +5614,10 @@ template {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: auto;
-  display: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .donate-modal {
@@ -5630,11 +5634,19 @@ template {
   max-width: 600px;
   width: 96.875%;
   margin: 0 auto;
-  padding: 30px 10px 40px;
+  padding: 1.875em 3.125% 2.5em;
+  /*30px 40px / 16px ; 10px / 320px*/
   background: #ffffff;
   border-radius: .9375em;
   /*15px*/
   opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .donate-modal {
+    padding: 1.875em;
+    /*30px*/
+  }
 }
 
 .donate-modal__form {
@@ -5651,6 +5663,15 @@ template {
   /*20px / 24px*/
 }
 
+@media (min-width: 640px) {
+  .donate-modal__title {
+    font-size: 2.25em;
+    /*36px / 24px*/
+    margin-bottom: .833333em;
+    /*30px / 36px*/
+  }
+}
+
 .donate-modal__wrap-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5662,14 +5683,30 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 1.25em;
+  /*20px / 16px*/
+}
+
+.donate-modal__checkbox-input-wrap {
+  margin: auto auto 1.25em 0;
+  /*20px / 16px*/
 }
 
 .donate-modal__label {
+  position: relative;
   font-weight: 500;
   font-size: 1em;
   line-height: 140%;
   color: #333b41;
-  margin: 0 0 8px;
+  margin: 0 0 .625em;
+  /*10px / 16px*/
+}
+
+.donate-modal__label::after {
+  content: "*";
+  position: absolute;
+  top: -3px;
+  color: #d31414;
 }
 
 .donate-modal__label-checkbox {
@@ -5677,7 +5714,8 @@ template {
   font-size: 1em;
   line-height: 140%;
   color: #333b41;
-  margin-bottom: 8px;
+  margin-bottom: .5em;
+  /*8px*/
 }
 
 .donate-modal__checkbox-text {
@@ -5686,16 +5724,18 @@ template {
 
 .donate-modal input[type="text"],
 .donate-modal input[type="number"] {
-  height: 42px;
-  padding: 10px;
+  height: 2.625em;
+  /*42px / 16px*/
   border: 1px solid #333b41;
   border-radius: 2px;
   outline: none;
 }
 
 .donate-modal__input-amount {
-  width: 146px;
-  margin-bottom: 40px;
+  width: 9.125em;
+  /*146px / 16px*/
+  margin-bottom: 1.25em;
+  /*20px / 16px*/
   background-image: url(../assets/icons/dollar-icon-input.svg);
   background-repeat: no-repeat;
   background-position: 94%;
@@ -5705,17 +5745,22 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin: 0;
+  width: 50%;
+  /*150px / 300px*/
+  margin: 0 0 1.875em;
+  /*30px / 16px*/
   padding: 0;
 }
 
 .donate-modal__social-item {
   height: 1.625em;
   /*26px / 16px*/
-  margin-left: 1.875em;
-  /*30px / 16px*/
+  margin-left: 0;
   list-style-type: none;
+}
+
+.donate-modal__social-item:nth-child(2) {
+  margin-top: -5px;
 }
 
 .donate-modal__social-item:last-child {
@@ -5769,6 +5814,106 @@ template {
 
 .donate-modal__social-link--youtube::after {
   content: url("../assets/icons/youtube-icon.svg");
+}
+
+.donate-modal__checkbox-textarea-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: auto auto 1.25em 0;
+  /*20px / 16px*/
+}
+
+.donate-modal__comments {
+  height: 5em;
+  /*80px / 16px*/
+}
+
+.donate-modal__input-name {
+  width: 18.6875em;
+  /*299px / 16px*/
+}
+
+@media (min-width: 640px) {
+  .donate-modal__input-name {
+    width: 18em;
+    /*288px / 16px*/
+  }
+}
+
+.donate-modal__input-card-type {
+  width: 11.4375em;
+  /*183px / 16px*/
+  padding-left: 7.5625em;
+  /*121px / 16px*/
+  background: url(../assets/icons/paypal-logo.svg) no-repeat;
+}
+
+.donate-modal__input-card-number {
+  width: 11.4375em;
+  /*183px / 16px*/
+  padding: .625em 1.875em .625em .625em;
+  /*10px 30px 10px 10px*/
+}
+
+.donate-modal__input-card-exp {
+  width: 4.75em;
+  /*76px / 16px*/
+  padding: .625em;
+  /*10px*/
+}
+
+.donate-modal__input-card-exp:nth-child(2) {
+  margin-right: 1.875em;
+  /*30px*/
+}
+
+.donate-modal__wrap-inner-card-exp {
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.donate-modal__wrap-inner-card-exp > .donate-modal__label {
+  width: 100%;
+}
+
+.donate-modal__wrap-inner-card-exp::before {
+  content: url(../assets/icons/arrow-down.svg);
+  position: absolute;
+  top: 2.625em;
+  /*42px / 16px*/
+  left: 3.125em;
+  /*50px / 16px*/
+  width: 1em;
+}
+
+.donate-modal__wrap-inner-card-exp::after {
+  content: url(../assets/icons/arrow-down.svg);
+  position: absolute;
+  top: 2.625em;
+  /*42px / 16px*/
+  left: 9.75em;
+  /*156px / 16px*/
+  width: 1em;
+}
+
+.donate-modal__input-card-code {
+  width: 3.5625em;
+  /*57px / 16px*/
+  padding: .625em;
+  /*10px*/
+  margin-bottom: 1.25em;
+  /*20px*/
 }
 
 .donate-modal__button {

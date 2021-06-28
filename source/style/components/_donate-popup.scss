@@ -1,5 +1,4 @@
 .donate-modal__wrap {
-   
     z-index: 5;
     position: fixed;
     left: 0;
@@ -13,7 +12,10 @@
 
     background-color: rgba(0, 0, 0, 0.5);
     overflow: auto;
-    display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .donate-modal {
@@ -26,11 +28,15 @@
     max-width: 600px;
     width: 96.875%;
     margin: 0 auto;
-    padding: 30px 10px 40px;
+    padding: 1.875em 3.125% 2.5em; /*30px 40px / 16px ; 10px / 320px*/
 
     background: $white;
     border-radius: .9375em; /*15px*/
     opacity: 1;
+
+    @include tablet {
+        padding: 1.875em; /*30px*/
+    }
 
     &__form {
         width: 100%;
@@ -39,22 +45,43 @@
     &__title {
         @include weigth-size-line-color(400, 1.5em, 120%, $orange-light); /*24px / 16px*/
         margin-bottom: .833333em; /*20px / 24px*/
+
+        @include tablet {
+            font-size: 2.25em; /*36px / 24px*/
+            margin-bottom: .833333em; /*30px / 36px*/
+        }
     }
 
     &__wrap-inner {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 1.25em; /*20px / 16px*/
+    }
+
+    &__checkbox-input-wrap {
+        margin: auto auto 1.25em 0; /*20px / 16px*/
     }
 
     &__label {
+        position: relative;
+
         @include weigth-size-line-color(500, 1em, 140%, $black-blue);
-        margin: 0 0 8px; 
+        margin: 0 0 .625em; /*10px / 16px*/
+       
+        &::after {
+            content: "*";
+    
+            position: absolute;
+            top: -3px;
+    
+            color: $red;
+        }
     }
 
     &__label-checkbox {
         @include weigth-size-line-color(400, 1em, 140%, $black-blue);
-        margin-bottom: 8px; 
+        margin-bottom: .5em; /*8px*/
     }
 
     &__checkbox-text {
@@ -63,8 +90,7 @@
 
     input[type="text"],
     input[type="number"] {
-        height: 42px;
-        padding: 10px;
+        height: 2.625em; /*42px / 16px*/
 
         border: 1px solid $black-blue;
         border-radius: 2px;
@@ -73,8 +99,8 @@
     }
 
     &__input-amount {
-        width: 146px;
-        margin-bottom: 40px;
+        width: 9.125em; /*146px / 16px*/
+        margin-bottom: 1.25em; /*20px / 16px*/
 
         background-image: url(../assets/icons/dollar-icon-input.svg);
         background-repeat: no-repeat;
@@ -83,18 +109,21 @@
 
     &__social-list {
         display: flex;
-        width: 100%;
-        margin: 0;
+        width: 50%; /*150px / 300px*/
+        margin: 0 0 1.875em; /*30px / 16px*/
         padding: 0;
 
     }
     
     &__social-item {
         height: 1.625em; /*26px / 16px*/
-        margin-left: 1.875em; /*30px / 16px*/
+        margin-left: 0;
     
         list-style-type: none;
-    
+        
+        &:nth-child(2) {
+            margin-top: -5px;
+        }
     }
     
     &__social-item:last-child {
@@ -140,6 +169,83 @@
         content: url("../assets/icons/youtube-icon.svg");
     }
 
+    &__checkbox-textarea-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto auto 1.25em 0; /*20px / 16px*/
+    }
+
+    &__comments {
+        height: 5em; /*80px / 16px*/
+    }
+
+    &__input-name {
+        width: 18.6875em; /*299px / 16px*/
+
+        @include tablet {
+            width: 18em; /*288px / 16px*/
+        }
+    }
+
+    &__input-card-type {
+        width: 11.4375em; /*183px / 16px*/
+        padding-left: 7.5625em; /*121px / 16px*/
+
+        background: url(../assets/icons/paypal-logo.svg) no-repeat;
+    }
+
+    &__input-card-number {
+        width: 11.4375em; /*183px / 16px*/
+        padding: .625em 1.875em .625em .625em; /*10px 30px 10px 10px*/
+    }
+
+    &__input-card-exp {
+        width: 4.75em; /*76px / 16px*/
+        padding: .625em; /*10px*/
+
+        &:nth-child(2) {
+            margin-right: 1.875em; /*30px*/
+        }
+    }
+
+    &__wrap-inner-card-exp {
+        position: relative;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & > .donate-modal__label {
+            width: 100%;
+        }
+
+        &::before {
+            content: url(../assets/icons/arrow-down.svg);
+
+            position: absolute;
+            top: 2.625em; /*42px / 16px*/
+            left: 3.125em; /*50px / 16px*/
+
+            width: 1em;
+        }
+
+        &::after {
+            content: url(../assets/icons/arrow-down.svg);
+
+            position: absolute;
+            top: 2.625em; /*42px / 16px*/
+            left: 9.75em; /*156px / 16px*/
+
+            width: 1em;
+        }
+    }
+
+    &__input-card-code {
+        width: 3.5625em; /*57px / 16px*/
+        padding: .625em; /*10px*/
+        margin-bottom: 1.25em; /*20px*/
+    }
+
     &__button {
         display: flex;
 		justify-content: center;
@@ -167,8 +273,3 @@
 		}
     }
 }
-
-
-
-
-  

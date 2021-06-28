@@ -475,6 +475,8 @@
 
 	&__button > a {
 		@include weigth-size-line-color(500, 1em, 140%, $white);
+
+        text-align: center;
 	}
 
 	&__share {
