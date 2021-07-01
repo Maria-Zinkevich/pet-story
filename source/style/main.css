@@ -3229,6 +3229,7 @@ template {
 .main__map-page {
   position: relative;
   background-color: #eaf7fe;
+  overflow: hidden;
 }
 
 .map {
