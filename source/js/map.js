@@ -53,5 +53,44 @@ MAP_CONTAINER.addEventListener('mousedown', function(event) {
     });
 });
 
+// Tooltips
+
+const animalElementsList = document.querySelectorAll('.map__elem');
+
+const removeClassName = function(elemSelect, elem) {
+    elemSelect.classList.remove('selected');
+    elem.querySelector('.map__tooltip-pointer').classList.remove('selected');
+};
+
+const addClassName = function(elem1, elem2) {
+    elem1.classList.add('selected');
+    elem2.classList.add('selected');
+};
+
+animalElementsList.forEach((element) => {
+    element.addEventListener('click', function(event) {
+        let selectedElement = document.querySelector('.selected');
+
+        if (selectedElement) {
+            removeClassName(selectedElement, element);
+            addClassName(element.querySelector('.map__tooltip'), element.querySelector('.map__tooltip-pointer'))
+        } else {
+            addClassName(element.querySelector('.map__tooltip'), element.querySelector('.map__tooltip-pointer'))
+        }
+    });
+    
+    MAP.addEventListener('click', (evt) => {
+        let selectedElement = document.querySelector('.selected');
+        
+        if (evt.target !== animalElementsList) {
+            if (selectedElement) {
+                removeClassName(selectedElement, element);
+            }
+        }
+    }, true);
+});
+
+
+
 
 

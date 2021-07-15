@@ -3558,6 +3558,10 @@ template {
   transform: rotate(-135deg);
 }
 
+.map .selected {
+  display: block;
+}
+
 .map__tooltip-pointer--eagles {
   position: absolute;
   top: calc(55% + 5px);

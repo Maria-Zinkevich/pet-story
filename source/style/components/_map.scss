@@ -239,7 +239,9 @@
         -ms-transform: rotate(-135deg);
         transform: rotate(-135deg);
     }
-
+    .selected {
+        display: block;
+    }
     &__tooltip-pointer--eagles {
         position: absolute;
         top: calc(55% + 5px);
