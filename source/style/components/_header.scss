@@ -175,16 +175,23 @@
 		border-radius: .125em;  /*2px / 16px*/
 	}
 
-	// &--open {
-	// 	padding: 0;
-	// }
+	&--open {
+		padding: 0;
+	}
+
+	&__nav-wrap--open {
+        display: none;
+    }
 
 	&__nav--open {
 		position: absolute;
+
+		display: block;
 		width: 100%;
-		max-width: 999px;
+        max-width: 100%;
 		padding: 10px 10px 40px;
 		margin-left: 0;
+
 		background: #ffffff;
 	}
 

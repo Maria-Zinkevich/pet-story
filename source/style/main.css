@@ -620,10 +620,19 @@ template {
   /*2px / 16px*/
 }
 
+.header--open {
+  padding: 0;
+}
+
+.header__nav-wrap--open {
+  display: none;
+}
+
 .header__nav--open {
   position: absolute;
+  display: block;
   width: 100%;
-  max-width: 999px;
+  max-width: 100%;
   padding: 10px 10px 40px;
   margin-left: 0;
   background: #ffffff;
